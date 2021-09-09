@@ -1,0 +1,1 @@
+{"version":3,"sources":["pagination-list.js"],"names":["monkeyList","List","valueNames","page","pagination"],"mappings":";AAAA,IAAIA,EAAa,IAAIC,KAAK,YAAa,CACrCC,WAAY,CAAC,aACbC,KAAM,EACNC,YAAY","file":"pagination-list.c4901319.js","sourceRoot":"../src","sourcesContent":["var monkeyList = new List('test-list', {\n  valueNames: ['list__img'],\n  page: 1,\n  pagination: true\n});"]}
