@@ -75,7 +75,8 @@ p {
 }
 
 .customer__picture {
-  padding-bottom: 29px;
+  position: relative;
+  top: 7px;
 }
 
 .customer__picture::before {
@@ -86,8 +87,8 @@ p {
   height: 40px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 222px;
-  left: 81px;
+  top: 146px;
+  right: 72px;
   z-index: 0;
 }
 
@@ -154,13 +155,16 @@ p {
 
 .pagination li {
   display: inline-block;
-  padding: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
 }
 
 .pagination a {
   visibility: hidden;
-  -webkit-column-gap: 18px;
-          column-gap: 18px;
+  display: inline-block;
+  width: 12px;
+  position: relative;
+  top: 444px;
 }
 
 .pagination a:before {
@@ -172,5 +176,10 @@ p {
   display: inline-block;
   visibility: visible;
   position: relative;
+}
+
+.active .page:before {
+  background-image: url("../images/Customer/home.svg");
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */

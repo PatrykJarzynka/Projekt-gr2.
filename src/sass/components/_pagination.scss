@@ -22,3 +22,8 @@
   visibility: visible;
   position: relative;
 }
+
+.active .page:before{
+  background-image: url("../images/Customer/home.svg");
+  background-color: white;
+}
