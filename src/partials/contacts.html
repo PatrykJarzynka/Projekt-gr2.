@@ -3,14 +3,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <section class="contact">
+  <div class="container">
   <h1 class="main-title">Contacts</h1>
   
   <div class="grid">
     <ul class="contact__list list">
       <div class="grid__item">
         <li class="contact__item">
+          <div class="contact__title-bg">
           <p class="contact__title cafe">CAFE</p>
+          </div>
           <h5 class="contact__secondary-title">Chicago</h5>
           <p class="contact__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
           <ul class="contact__time-table list">
@@ -39,7 +43,9 @@
       </div>
       <div class="grid__item">
         <li class="contact__item">
+          <div class="contact__title-bg-foodtruck">
           <p class="contact__title foodtruck">FOODTRUCK</p>
+          </div>
           <h5 class="contact__secondary-title">Los Angeles</h5>
           <p class="contact__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
           <ul class="contact__time-table list">
@@ -68,7 +74,9 @@
       </div>
       <div class="grid__item">
         <li class="contact__item">
+          <div class="contact__title-bg">
           <p class="contact__title cafe">CAFE</p>
+          </div>
           <h5 class="contact__secondary-title">New York</h5>
           <p class="contact__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
           <ul class="contact__time-table list">
@@ -99,16 +107,17 @@
   </div>
   <ul class="contact__button-list list">
     <li class="contact__button-item">
-      <button class="contact__button" type="button">Our Locations</button>
+      <button class="contact__button-locations" type="button">Our Locations</button>
       <svg class="contact__button-icon">
-        <use></use>
+        <use href="/src/images/contacts/icons.svg#icon-Vector"></use>
       </svg>
     </li>
     <li class="contact__button-item">
-      <button class="contact__button" type="button">Franchise</button>
+      <button class="contact__button-franchise" type="button">Franchise</button>
       <svg class="contact__button-icon">
         <use></use>
       </svg>
     </li>
   </ul>
+  </div>
 </section>
