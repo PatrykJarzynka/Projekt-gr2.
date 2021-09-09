@@ -1,10 +1,20 @@
+@import "./utils/variables";
+
 @import './base/common';
 @import './base/container';
-
 @import './base/section';
 
+// Style dla pliku z przykładem HTML fragmentu
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
 @import './layout/advantages';
-
 @import './layout/about';
+@import "./layout/customer";
+@import "./layout/contacts";
+@import "./layout/footer";
 
-@import './utils/variables';
+@import "./components/pagination";
+
