@@ -73,7 +73,20 @@ p {
 }
 
 .customer__picture {
-  padding-bottom: 18px;
+  padding-bottom: 29px;
+}
+
+.customer__picture::before {
+  content: '';
+  display: block;
+  background-image: url("../images/Customer/special-mark.svg");
+  width: 54px;
+  height: 40px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 222px;
+  left: 81px;
+  z-index: 0;
 }
 
 .customer__text-container {
@@ -90,6 +103,8 @@ p {
   line-height: 2.584;
   text-align: center;
   color: var(--main-color);
+  position: relative;
+  z-index: 1;
 }
 
 .customer__gradient {
