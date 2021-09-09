@@ -1,7 +1,8 @@
 .customer{
 
     &__picture{
-        padding-bottom: 29px;
+        position:relative;
+        top:7px;
     }
 
     &__picture::before{
@@ -12,8 +13,8 @@
         height:40px;
         background-repeat: no-repeat;
         position: absolute;
-        top: 222px;
-        left: 81px;
+        top: 146px;
+        right: 72px;
         z-index: 0;
     }
 
