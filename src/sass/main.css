@@ -9,6 +9,7 @@
   --main-color: #000000;
   --secondary-color: #D41443;
   --customer-color: #FAFAFA;
+  --gradient-bars-color: #E1E1E1;
 }
 
 body {
@@ -76,15 +77,31 @@ p {
 }
 
 .customer__text-container {
-  padding: 43px 66px 26px 57px;
   background-color: var(--customer-color);
+}
+
+.customer__wrapper {
+  padding: 3px 16px 0px 7px;
 }
 
 .customer__text {
   font-weight: 500;
   font-size: 12px;
-  line-height: 2.583;
+  line-height: 2.584;
   text-align: center;
   color: var(--main-color);
+}
+
+.customer__gradient {
+  margin: 40px 50px 20px 50px;
+  background: repeating-linear-gradient(to bottom, var(--customer-color), var(--customer-color) 30px, var(--gradient-bars-color) 30px, var(--gradient-bars-color) 31px);
+}
+
+.customer__details {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: var(--main-color);
+  margin-top: 52px;
 }
 /*# sourceMappingURL=main.css.map */
