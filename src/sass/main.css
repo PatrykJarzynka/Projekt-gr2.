@@ -66,6 +66,32 @@ p {
           align-items: center;
 }
 
+.container-contacts {
+  background-color: #FFF5F6;
+  min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 86px;
+}
+
+.container-footer {
+  background-color: #FFF5F6;
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
 .section {
   margin-left: auto;
   margin-right: auto;
@@ -75,6 +101,10 @@ p {
 
 .section-customer {
   padding: 80px 0px 86px 0px;
+}
+
+.section-footer {
+  padding: 113px 0px 25px 0px;
 }
 
 .customer__picture {
@@ -158,30 +188,6 @@ p {
 
 .main-title {
   display: none;
-}
-
-.container {
-  background-color: #FFF5F6;
-  min-width: 320px;
-  max-width: 480px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 86px;
-}
-
-.list {
-  list-style: none;
 }
 
 .contact__item {
@@ -364,14 +370,6 @@ p {
   width: 100%;
 }
 
-.footer .container {
-  background-color: #FFF5F6;
-  position: relative;
-  min-width: 320px;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
 .footer__title {
   font-family: 'Titan One', cursive;
   font-style: normal;
@@ -400,7 +398,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 147px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-top: 43px;
   margin-bottom: 46px;
   padding-right: 20px;
