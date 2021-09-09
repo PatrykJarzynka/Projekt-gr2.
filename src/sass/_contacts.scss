@@ -1,16 +1,10 @@
-*{
-    box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
-}
+
 .main-title {
     display: none;
 }
 
 .container {
-     background-color: #FFF5F6;
+     background-color: #FFF5F6;;
     min-width:320px;
     max-width: 480px;
     display: flex;
@@ -139,16 +133,17 @@ padding-left: 20px;
 font-size: 16px;
 line-height: 21px;
 display: flex;
-align-items: center;
+justify-content: center;
 text-align: center;
 color: #FFFFFF;
 border: none;
 background: #D41342;
 border-radius: 22px;
 padding-left: 17px;
-padding-right: 30px;
+padding-right: 20px;
 padding-top: 10px;
 padding-bottom: 10px;
+
 }
 .contact__button-franchise {
    font-size: 16px;
@@ -165,5 +160,17 @@ padding-left: 32px;
 padding-right: 48px;
 padding-top: 10px;
 padding-bottom: 10px;
-
+margin-top: 10px;
+}
+.contact__button-icon {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+.contact__button-icon-red {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  margin-top: 3px;
 }
