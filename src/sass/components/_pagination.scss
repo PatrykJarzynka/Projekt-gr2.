@@ -1,0 +1,29 @@
+.pagination li {
+  display:inline-block;
+  padding-left:9px;
+  padding-right: 9px;
+}
+
+.pagination a{
+  visibility: hidden;
+  display: inline-block;
+  width:12px;
+  position: relative;
+  top:444px;
+}
+
+.pagination a:before{
+  content: "";
+  width:12px;
+  height:12px;
+  background-color: var(--pagination-dots-color);
+  border-radius: 50%;
+  display: inline-block;
+  visibility: visible;
+  position: relative;
+}
+
+.active .page:before{
+  background-image: url("../images/Customer/home.svg");
+  background-color: white;
+}
