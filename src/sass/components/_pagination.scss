@@ -1,0 +1,20 @@
+.pagination li {
+  display:inline-block;
+  padding:5px;
+}
+
+.pagination a{
+  visibility: hidden;
+  column-gap: 18px;
+}
+
+.pagination a:before{
+  content: "";
+  width:12px;
+  height:12px;
+  background-color: var(--pagination-dots-color);
+  border-radius: 50%;
+  display: inline-block;
+  visibility: visible;
+  position: relative;
+}
