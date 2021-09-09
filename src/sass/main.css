@@ -41,27 +41,6 @@ p {
   padding: 121px 0px 98px 0px;
 }
 
-.about {
-  background-color: var(--central-color);
-}
-
-.about__title {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.583;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.about__subtitle {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.583;
-  color: #907E82;
-}
-
 .advantages {
   padding-top: 39px;
   padding-bottom: 60px;
@@ -70,11 +49,6 @@ p {
 
 .advantages__img {
   height: 50px;
-}
-
-.advantages__title {
-  color: orange;
-  font-style: italic;
 }
 
 .grid__number {
@@ -95,6 +69,27 @@ p {
   line-height: 1.666;
   max-width: 230px;
   margin-bottom: 38px;
+}
+
+.about {
+  background-color: var(--central-color);
+}
+
+.about__title {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.about__subtitle {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: #907E82;
 }
 
 :root {
