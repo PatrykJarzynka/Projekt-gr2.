@@ -1,0 +1,21 @@
+// tego nie mogę sprawdzić czy dobrze działa, bo nie widze zmian
+
+.about{
+    background-color: var(--central-color);
+}
+.about__title{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.583;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about__subtitle{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.583;
+    color: #907E82;
+}
