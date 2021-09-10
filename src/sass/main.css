@@ -74,7 +74,7 @@ p {
 }
 
 .container-contacts {
-  background-color: #FFF5F6;
+  background-color: var(--central-color);
   min-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,7 +115,7 @@ p {
 
 .section-footer {
   padding: 113px 0px 25px 0px;
-  background-color: #FFF5F6;
+  background-color: var(--central-color);
 }
 
 .section-products {
@@ -771,7 +771,6 @@ p {
 }
 
 .time-table__day {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
@@ -881,6 +880,23 @@ p {
   margin-top: 3px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .contact__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact__item {
+    margin-right: 20px;
+  }
+}
+
 .footer {
   width: 100%;
 }
@@ -892,7 +908,7 @@ p {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: var(--time-table-color);
   max-width: 232px;
   margin-bottom: 17px;
 }
