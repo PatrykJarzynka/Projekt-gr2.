@@ -1,0 +1,78 @@
+// tego nie mogę sprawdzić czy dobrze działa, bo nie widze zmian
+
+.about{
+    background-color: var(--central-color);
+    padding-top: 125px;
+}
+.about__title{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.166;
+    padding-left: 41px;
+    padding-right: 41px;
+    color: #ffa5ba;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about__subtitle{
+    font-family: var(--secondary-font);
+    font-size: 34px;
+    line-height: 1.147;
+    padding-left: 39px;
+    padding-right: 39px;    
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.about__description{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.583;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 46px;
+    margin-bottom: 27px;
+}
+
+.about__comment{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.583;
+    color: #907E82;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about-btn {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.285;
+    display: flex;
+    align-items: center;
+    padding-left: 42px;
+    padding-right: 29px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 22px;
+    cursor: pointer;
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
+.about-btn__icon {
+    width: 10px;
+    height: 10px;
+    margin-left: 19px;
+    margin-top: 2px;
+  }
