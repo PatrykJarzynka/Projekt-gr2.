@@ -1,0 +1,83 @@
+.customer{
+
+    &__picture{
+        position:relative;
+        top:7px;
+    }
+
+    &__picture::before{
+        content: '';
+        display: block;
+        background-image: url("../images/Customer/special-mark.svg");
+        width:54px;
+        height:40px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 146px;
+        right: 72px;
+        z-index: 0;
+    }
+
+    &__text-container{
+        background-color: var(--customer-color);
+    }
+
+    &__wrapper{
+        padding: 3px 16px 0px 7px;
+    }
+
+    &__text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.584;
+    text-align: center;
+    color: var(--main-color);
+    position: relative;
+    z-index: 1;
+    }
+
+    &__gradient{
+        margin: 40px 50px 20px 50px;
+        background:repeating-linear-gradient(to bottom,var(--customer-color), var(--customer-color) 30px, var(--gradient-bars-color) 30px, var(--gradient-bars-color) 31px);
+    }
+
+    &__details{
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: var(--main-color);
+    margin-top: 52px;
+    }
+    
+}
+
+.dot{
+        display: inline-block;
+        width: 4px;
+        height:4px;
+        border-radius: 50%;
+        background-color: var(--dots-color);    
+        position: relative;
+        top:30px;
+
+
+        &::after{
+            content: "";
+            width: 4px;
+            height:4px;
+            border-radius: 50%;
+            background-color: var(--dots-color); 
+            position: absolute;
+            left:10px;
+        }
+
+        &::before{
+            content: "";
+            width: 4px;
+            height:4px;
+            border-radius: 50%;
+            background-color: var(--dots-color); 
+            position: absolute;
+            right:10px;
+        }
+}
