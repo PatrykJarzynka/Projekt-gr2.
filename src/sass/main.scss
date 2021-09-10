@@ -4,8 +4,6 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-<<<<<<< Updated upstream
-
 
 @import "./utils/variables";
 
@@ -13,12 +11,13 @@
 @import "./base/container";
 @import "./base/section";
 
+@import './layout/Hero_Header';
+@import './layout/products';
+@import './layout/advantages';
+@import './layout/about';
 @import "./layout/customer";
 @import "./layout/contacts";
 @import "./layout/footer";
 
 @import "./components/pagination";
 
-=======
-@import './layout/Hero_Header';
->>>>>>> Stashed changes
