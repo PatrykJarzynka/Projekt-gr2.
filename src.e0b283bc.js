@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/products/3dots.png":[["3dots.5bada95c.png","FuKf"],"FuKf"],"./../images/products/products1.png":[["products1.da82ab7e.png","I3Kk"],"I3Kk"],"./../images/products/products2.png":[["products2.53406ab4.png","IeZt"],"IeZt"],"./../images/products/products3.png":[["products3.14d7fc94.png","b3Ip"],"b3Ip"],"/home/runner/work/Projekt-grupowy/Projekt-grupowy/src/images/products/arrow-right.png":[["arrow-right.67bcf19b.png","lcwa"],"lcwa"],"./../images/Customer/special-mark.svg":[["special-mark.d20c615d.svg","hsnk"],"hsnk"],"./../images/Customer/home.svg":[["home.b856893d.svg","xLTJ"],"xLTJ"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/Projekt-gr2./src.382794b7.js.map
+//# sourceMappingURL=/Projekt-gr2./src.e0b283bc.js.map
