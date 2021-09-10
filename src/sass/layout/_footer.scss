@@ -1,11 +1,9 @@
-
 .footer {
   width: 100%;
 }
 
-
 .footer__title {
-  font-family: 'Titan One', cursive;
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -16,14 +14,14 @@
   margin-bottom: 17px;
 }
 .footer__title-second {
-  font-family: 'Titan One', cursive;
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
   line-height: 39px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--secondary-color);
   max-width: 200px;
 }
 .footer__social-list {
@@ -32,17 +30,13 @@
   margin-top: 43px;
   margin-bottom: 46px;
   padding-right: 20px;
-  
 }
 .footer__social-list-item {
-  
-  
   &:not(:last-child) {
     margin-right: 28px;
   }
 }
 .footer__contact-title {
-  font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -50,24 +44,21 @@
   text-align: right;
 }
 .footer__contact-link {
-  font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
   line-height: 186%;
   text-align: right;
-  color: #d41443;
+  color: var(--secondary-color);
   text-decoration: none;
   padding-right: 20px;
 }
 .copyright {
-  
   inline-size: 150px;
   word-break: break-word;
   text-align: center;
- margin-top: 22px;
- padding-bottom: 25px;
- 
+  margin-top: 22px;
+  padding-bottom: 25px;
 }
 .copyright__link {
   font-style: normal;
@@ -75,13 +66,12 @@
   font-size: 14px;
   line-height: 152%;
   text-align: center;
-  color: #907e82;
+  color: var(--grey-color);
   text-decoration: none;
 }
 .line {
-    border: 1px solid #e1e1e1;
-    width: 100%;
-    margin-top: 43px;
+  border: 1px solid var(--gradient-bars-color);
+  margin-top: 43px;
 }
 .social-list__icon {
   width: 20px;
@@ -91,7 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fea5bb;
+  background: var(--social-link-bg-color);
   border-radius: 50%;
   width: 32px;
   height: 32px;
