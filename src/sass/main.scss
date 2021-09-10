@@ -1,15 +1,17 @@
-@import "./utils/variables";
-
-@import './base/common';
-@import './base/container';
-@import './base/section';
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
 
 // Style dla pliku z przykładem HTML fragmentu
+
+@import "./utils/variables";
 
 @import "./base/common";
 @import "./base/container";
 @import "./base/section";
 
+@import './layout/Hero_Header';
 @import './layout/products';
 @import './layout/advantages';
 @import './layout/about';
@@ -18,3 +20,4 @@
 @import "./layout/footer";
 
 @import "./components/pagination";
+
