@@ -7,7 +7,7 @@
         "base/_common.scss",
         "base/_container.scss",
         "base/_section.scss",
-        "layout/_Hero_Header.scss",
+        "layout/_hero-header.scss",
         "layout/_products.scss",
         "layout/_advantages.scss",
         "layout/_about.scss",
