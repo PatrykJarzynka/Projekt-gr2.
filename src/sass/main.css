@@ -7,7 +7,7 @@
   --main-font: 'DM Sans', sans-serif;
   --secondary-font: 'Titan One', sans-serif;
   --main-color: #000000;
-  --secondary-color: #d41443;
+  --secondary-color: #D41443;
   --first-background-color: #ffb8ca;
   --menu-background: #e17992;
   --white-color: #ffffff;
@@ -228,7 +228,7 @@ p {
 .products__item::after {
   content: url(../images/products/3dots.png);
   position: relative;
-  top: -240px;
+  top: -259px;
   right: 0;
 }
 
@@ -267,8 +267,6 @@ p {
 
 .products__secondary-title {
   font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -279,15 +277,14 @@ p {
 
 .products__description {
   font-family: DM Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
   color: #FFFFFF;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-top: 66px;
+  margin-bottom: 30px;
 }
 
 .products__btn {
