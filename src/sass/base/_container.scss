@@ -5,13 +5,25 @@
   padding: 0 20px;
   margin: 0 auto;
   
-    &-customer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &-contacts {
-     background-color: #FFF5F6;;
+  &-about{
+    background-color: var(--central-color);
+    padding-top: 125px;
+  }
+
+  &-advantages {
+    background-color: var(--central-color);
+    padding: 39px 20px 145px 20px;
+  }
+
+  &-customer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+  }
+    
+  &-contacts {
+    background-color: #FFF5F6;;
     min-width:320px;
     display: flex;
     flex-direction: column;
@@ -19,15 +31,30 @@
     align-items: center;
     padding-top: 86px;
   }
-   &-footer {
-  background-color: #FFF5F6;;
-  position: relative;
-  min-width: 320px;
-  margin: 0 auto;
+  
+  &-footer {
+    background-color: #FFF5F6;;
+    position: relative;
+    min-width: 320px;
+    margin: 0 auto;
+  }
 }
+   
 
-  &-about{
-      background-color: var(--central-color);
+// --------------------------- TABLET ------------------------------ //
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .container{
+    max-width: 768px;
+    padding: 0;
+    margin: 0 auto;
+
+    &-about{
+      padding: 130px 36px 66px 39px; 
+    }
+
+    &-advantages {
+      padding: 0px 76px 140px 36px;
+    }
   }
 }
    
