@@ -1,14 +1,21 @@
 .hero-header {
   background-color: var(--first-background-color);
+  position: relative;
+  overflow: hidden;
 }
 
 .navigation {
   display: flex;
 }
 
+.main-header .container {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .logo {
   padding-top: 6px;
-  padding-right: 101px;
+  margin-left: 20px;
 }
 
 .main-header {
@@ -37,22 +44,24 @@
 
 .main-header__mobile-menu {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 20px;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 
-.mobile-menu {
-  background-color: var(--menu-background);
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-bottom: 185px;
-  margin-top: 0;
-  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
-  z-index: 4;
+@media screen and (max-width: 480px) {
+  .mobile-menu {
+    background-color: var(--menu-background);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 185px;
+    margin-top: 0;
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    z-index: 4;
+  }
 }
 
 .is-hidden {
@@ -80,7 +89,7 @@
   padding-left: 21px;
 }
 
-.mobile-menu__item-menu-contact {
+.mobile-menu__item-menu:last-child {
   padding-bottom: 186px; /*gdzieś z przybliżeń wyszło za mało więc dodałam tu 1px */
 }
 
@@ -88,7 +97,15 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 480px) {
+  .mobile-menu__item-btn-tablet {
+    visibility: hidden;
+  }
+}
+
 .mobile-menu__item-btn {
+  display: flex;
+  gap: 20px;
   font-family: var(--main-font);
   height: 44px;
   width: 209px;
@@ -102,17 +119,14 @@
   margin-left: 21px;
   margin-right: 20px;
   margin-bottom: 32px;
+  align-items: center;
+  justify-content: center;
   border: none;
-  padding: 14px 69px 14px 49px;
 }
 
 .mobile-menu__item-btn:hover,
 .mobile-menu__item-btn:focus {
   background-color: #ecebeb; /*dodać do var */
-}
-
-.mobile-menu__item-btn {
-  display: inline;
 }
 
 .mobile-menu__close-btn {
@@ -122,10 +136,11 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  z-index: 5;
 }
 
 .hero {
-  margin-top: 99px;
+  margin-top: 262px;
 }
 
 .hero__h1 {
@@ -155,11 +170,95 @@
   line-height: 0.955;
   color: var(--secondary-color);
 }
+/*od tego momentu na tablet*/
 
-.hero__buttons {
-  margin-top: 262px;
-  padding-left: 20px;
-  padding-bottom: 185px; /*gdzieś z przybliżeń wyszło za mało więc dodałam tu 1px */
+.hero__count-dark {
+  font-family: var(--secondary-font);
+  font-size: 28px;
+  line-height: 1.143;
+  letter-spacing: 0.04em;
+  color: var(--secondary-color);
+}
+
+.hero__count-dark-cafe {
+  position: absolute;
+  right: 44px;
+  top: 96px;
+  font-family: var(--secondary-font);
+  font-size: 28px;
+  line-height: 1.143;
+  letter-spacing: 0.04em;
+  color: var(--secondary-color);
+  z-index: 3;
+}
+
+.hero__count-dark-trucks {
+  position: absolute;
+  right: 42px;
+  top: 152px;
+  font-family: var(--secondary-font);
+  font-size: 28px;
+  line-height: 1.143;
+  letter-spacing: 0.04em;
+  color: var(--secondary-color);
+  z-index: 3;
+}
+
+.hero__count-light {
+  position: absolute;
+  top: 128px;
+  right: 44px;
+}
+
+.hero__count-light-cafe {
+  text-align: right;
+  font-family: var(--main-font);
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--white-color);
+  white-space: nowrap;
+  margin-bottom: 46px;
+}
+
+.hero__count-light-trucks {
+  text-align: right;
+  font-family: var(--main-font);
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--white-color);
+  white-space: nowrap;
+}
+
+.hero__count-circle:first-child {
+  position: absolute;
+  top: 94px;
+  right: 34px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.hero__count-circle:last-child {
+  position: absolute;
+  top: 151px;
+  right: 34px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .hero__buttons {
+    margin-top: 125px;
+    padding-left: 20px;
+    padding-bottom: 184px; /*gdzieś z przybliżeń wyszło za mało więc dodałam tu 1px */
+  }
 }
 
 .hero__btn {
@@ -205,9 +304,28 @@
 
 .bg-image {
   position: absolute;
-  right: 32px;
+  left: 117px;
   top: 92px;
   z-index: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .bg-image__tablet {
+    visibility: hidden;
+    display: none;
+  }
+
+  .hero__count-circle {
+    visibility: hidden;
+  }
+
+  .bg-image__tasty {
+    visibility: hidden;
+    display: none;
+  }
+  .hero__count-light {
+    visibility: hidden;
+  }
 }
 
 .bg-circle {
@@ -220,4 +338,200 @@
   left: 36px;
   top: 83px;
   z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .show {
+    visibility: hidden;
+    display: none;
+  }
+} /*nie wiem jak to zrobić, żeby się nie robił poniżej dodatkowy div */
+
+@media screen and (max-width: 480px) {
+  .hero__count {
+    visibility: hidden;
+  }
+}
+/* tablet 
+@media screen and (min-width: 768px) and (max-width: 1199px) */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    margin-top: 150px;
+  }
+
+  .hero__buttons {
+    margin-top: 125px;
+    padding-left: 20px;
+    padding-bottom: 197px; /*gdzieś z przybliżeń wyszło za mało więc dodałam tu 1px */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bg-image {
+    visibility: hidden;
+  }
+
+  .bg-image__tablet {
+    position: absolute;
+    left: 378px;
+    top: 63px;
+    z-index: 3;
+  }
+
+  .bg-image__tasty {
+    position: absolute;
+    right: 34px;
+    top: 266px;
+    z-index: 3;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bg-circle {
+    position: absolute;
+    left: 307px;
+    top: 31px;
+    width: 324px;
+    height: 322px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile-menu__item-menu:last-child {
+    padding-bottom: 703px;
+  }
+
+  .mobile-menu {
+    background-color: var(--menu-background);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 185px;
+    margin-top: 0;
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    z-index: 4;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    padding-top: 37px;
+    margin-left: 34px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-header__mobile-menu {
+    position: absolute;
+    top: 52px;
+    right: 224px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 3;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__h1 {
+    text-transform: uppercase;
+    position: absolute;
+    left: 34px;
+    top: 102px;
+    z-index: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .hero__h1-light {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0.04;
+    line-height: 1.145;
+    color: var(--white-color);
+  }
+
+  .hero__h1-dark {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.04;
+    line-height: 0.905;
+    color: var(--secondary-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__buttons {
+    margin-top: 20px;
+    padding-left: 34px;
+    padding-bottom: 194px;
+  }
+
+  .hero__btn {
+    display: flex;
+    gap: 8px;
+    padding-left: 34px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .show-item {
+    display: flex;
+  }
+
+  .show-item__short-description {
+    position: absolute;
+    width: 114px;
+    height: 48px;
+    left: 154px;
+    top: 292px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: var(--white-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile-menu__item-btn-tablet {
+    display: flex;
+    gap: 12px;
+    position: absolute; /*ok*/
+    right: 34px; /*ok*/
+    top: 38px; /*ok*/
+    z-index: 3; /*ok*/
+    font-family: var(--main-font); /*ok*/
+    height: 44px; /*zbędne?*/
+    width: 160px; /*zbędne?*/
+    font-weight: 700; /*ok*/
+    font-size: 16px; /*ok*/
+    line-height: 1.302;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+    border-radius: 22px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .show-item__short-more {
+    margin-left: 0px;
+    margin-top: 7px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .show-item__short-img {
+    position: absolute;
+    top: 245px;
+    left: 34px;
+  }
 }
