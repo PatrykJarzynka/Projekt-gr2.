@@ -90,3 +90,43 @@
   width: 32px;
   height: 32px;
 }
+
+
+@media screen and (min-width:768px) {
+
+  .container-footer {
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer__right-side {
+margin-top: -50px;
+  
+}
+.copyright{
+  inline-size: initial;
+  word-break: unset;
+  align-items: center;
+  padding-bottom: 0px;
+}
+.social-list__link {
+  width: 34px;
+  height: 34px;
+}
+.footer__title {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  max-width: 340px;
+  margin-bottom: 16px;
+}
+.footer__title-second {
+  font-size: 48px;
+line-height: 55px;
+letter-spacing: 0.06em;
+}
+.footer__contact-title {
+  font-size: 14px;
+line-height: 186%;
+}
+}

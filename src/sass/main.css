@@ -888,12 +888,25 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .contact__item {
     margin-right: 20px;
+  }
+  .contact__item-last {
+    margin-right: 0px;
+  }
+  .contact__button-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__button-franchise {
+    margin-left: 15px;
+    margin-top: 0px;
   }
 }
 
@@ -1011,6 +1024,48 @@ p {
   border-radius: 50%;
   width: 32px;
   height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__right-side {
+    margin-top: -50px;
+  }
+  .copyright {
+    inline-size: initial;
+    word-break: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0px;
+  }
+  .social-list__link {
+    width: 34px;
+    height: 34px;
+  }
+  .footer__title {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    max-width: 340px;
+    margin-bottom: 16px;
+  }
+  .footer__title-second {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+  }
+  .footer__contact-title {
+    font-size: 14px;
+    line-height: 186%;
+  }
 }
 
 .pagination li {
