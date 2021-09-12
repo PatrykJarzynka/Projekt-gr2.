@@ -160,3 +160,31 @@ margin-top: 10px;
   margin-left: 10px;
   margin-top: 3px;
 }
+
+
+@media screen and (min-width:768px) {
+
+  .container {
+  max-width: 768px;
+  
+}
+  .contact__list {
+    display: flex;
+    
+  }
+  .contact__item {
+    margin-right: 20px;
+  }
+  .contact__item-last {
+    margin-right: 0px;
+  }
+  .contact__button-list {
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact__button-franchise {
+    margin-left: 15px;
+    margin-top: 0px;
+  }
+
+}

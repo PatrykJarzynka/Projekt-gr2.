@@ -74,7 +74,7 @@ p {
 }
 
 .container-contacts {
-  background-color: #FFF5F6;
+  background-color: var(--central-color);
   min-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,7 +115,7 @@ p {
 
 .section-footer {
   padding: 113px 0px 25px 0px;
-  background-color: #FFF5F6;
+  background-color: var(--central-color);
 }
 
 .section-products {
@@ -768,7 +768,6 @@ p {
 }
 
 .time-table__day {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
@@ -878,6 +877,36 @@ p {
   margin-top: 3px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .contact__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact__item {
+    margin-right: 20px;
+  }
+  .contact__item-last {
+    margin-right: 0px;
+  }
+  .contact__button-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__button-franchise {
+    margin-left: 15px;
+    margin-top: 0px;
+  }
+}
+
 .footer {
   width: 100%;
 }
@@ -889,7 +918,7 @@ p {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: var(--time-table-color);
   max-width: 232px;
   margin-bottom: 17px;
 }
@@ -992,6 +1021,48 @@ p {
   border-radius: 50%;
   width: 32px;
   height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__right-side {
+    margin-top: -50px;
+  }
+  .copyright {
+    inline-size: initial;
+    word-break: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0px;
+  }
+  .social-list__link {
+    width: 34px;
+    height: 34px;
+  }
+  .footer__title {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    max-width: 340px;
+    margin-bottom: 16px;
+  }
+  .footer__title-second {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+  }
+  .footer__contact-title {
+    font-size: 14px;
+    line-height: 186%;
+  }
 }
 
 .pagination li {
