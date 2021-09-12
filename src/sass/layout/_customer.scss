@@ -1,32 +1,33 @@
-.customer{
+// --------------------------- MOBILE ------------------------------ //
 
-    &__picture{
-        position:relative;
-        top:7px;
-    }
+.customer {
+  &__picture {
+    position: relative;
+    top: 7px;
+  }
 
-    &__picture::before{
-        content: '';
-        display: block;
-        background-image: url("../images/Customer/special-mark.svg");
-        width:54px;
-        height:40px;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 146px;
-        right: 72px;
-        z-index: 0;
-    }
+  &__picture::before {
+    content: '';
+    display: block;
+    background-image: url('../images/Customer/special-mark.svg');
+    width: 54px;
+    height: 40px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 146px;
+    right: 72px;
+    z-index: 0;
+  }
 
-    &__text-container{
-        background-color: var(--customer-color);
-    }
+  &__text-container {
+    background-color: var(--customer-color);
+  }
 
-    &__wrapper{
-        padding: 3px 16px 0px 7px;
-    }
+  &__wrapper {
+    padding: 3px 16px 0px 7px;
+  }
 
-    &__text{
+  &__text {
     font-weight: 500;
     font-size: 12px;
     line-height: 2.584;
@@ -34,50 +35,96 @@
     color: var(--main-color);
     position: relative;
     z-index: 1;
-    }
+  }
 
-    &__gradient{
-        margin: 40px 50px 20px 50px;
-        background:repeating-linear-gradient(to bottom,var(--customer-color), var(--customer-color) 30px, var(--gradient-bars-color) 30px, var(--gradient-bars-color) 31px);
-    }
+  &__gradient {
+    margin: 40px 50px 20px 50px;
+    background: repeating-linear-gradient(
+      to bottom,
+      var(--customer-color),
+      var(--customer-color) 30px,
+      var(--gradient-bars-color) 30px,
+      var(--gradient-bars-color) 31px
+    );
+  }
 
-    &__details{
+  &__details {
     font-weight: 500;
     font-size: 14px;
     text-align: center;
     color: var(--main-color);
     margin-top: 52px;
-    }
-    
+  }
 }
 
-.dot{
-        display: inline-block;
-        width: 4px;
-        height:4px;
-        border-radius: 50%;
-        background-color: var(--dots-color);    
-        position: relative;
-        top:30px;
+.dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--dots-color);
+  position: relative;
+  top: 30px;
 
+  &::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--dots-color);
+    position: absolute;
+    left: 10px;
+  }
 
-        &::after{
-            content: "";
-            width: 4px;
-            height:4px;
-            border-radius: 50%;
-            background-color: var(--dots-color); 
-            position: absolute;
-            left:10px;
-        }
+  &::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--dots-color);
+    position: absolute;
+    right: 10px;
+  }
+}
 
-        &::before{
-            content: "";
-            width: 4px;
-            height:4px;
-            border-radius: 50%;
-            background-color: var(--dots-color); 
-            position: absolute;
-            right:10px;
-        }
+// --------------------------- TABLET ------------------------------ //
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customer {
+    &__text {
+      font-size: 14px;
+      line-height: 2.143;
+    }
+
+    &__picture {
+      position: relative;
+      top: 17px;
+    }
+
+    &__picture::before {
+      top: 138px;
+      right: 243px;
+    }
+    &__details {
+      font-size: 16px;
+      margin-top: 42px;
+    }
+    &__gradient {
+      margin: 47px 36px 28px 60px;
+      background: repeating-linear-gradient(
+        to bottom,
+        var(--customer-color),
+        var(--customer-color) 29px,
+        var(--gradient-bars-color) 29px,
+        var(--gradient-bars-color) 30px
+      );
+    }
+    &__wrapper {
+      padding: 0px 44px 0px 23px;
+    }
+  }
+
+  .dot {
+    top: 24px;
+  }
 }
