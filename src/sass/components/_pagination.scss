@@ -1,21 +1,21 @@
 .pagination li {
-  display:inline-block;
-  padding-left:9px;
+  display: inline-block;
+  padding-left: 9px;
   padding-right: 9px;
 }
 
-.pagination a{
+.pagination a {
   visibility: hidden;
   display: inline-block;
-  width:12px;
+  width: 12px;
   position: relative;
-  top:444px;
+  top: 444px;
 }
 
-.pagination a:before{
-  content: "";
-  width:12px;
-  height:12px;
+.pagination a:before {
+  content: '';
+  width: 12px;
+  height: 12px;
   background-color: var(--pagination-dots-color);
   border-radius: 50%;
   display: inline-block;
@@ -23,7 +23,15 @@
   position: relative;
 }
 
-.active .page:before{
-  background-image: url("../images/Customer/home.svg");
+.active .page:before {
+  background-image: url('../images/Customer/home.svg');
   background-color: white;
+}
+
+// --------------------------- TABLET ------------------------------ //
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .pagination a {
+    top: 285px;
+  }
 }

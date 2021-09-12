@@ -1,14 +1,33 @@
+<section class="gallery section-gallery">
+  <div class="container container-gallery">
+    <picture>
+      <source
+        srcset="
+          ./images/Gallery/Gallery-img-tablet.webp    1x,
+          ./images/Gallery/Gallery-img-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+      />
 
-<section class="gallery">
-<picture>
+      <source
+        srcset="
+          ./images/Gallery/Gallery-img-tablet.jpg    1x,
+          ./images/Gallery/Gallery-img-tablet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
 
-    <source srcset="./images/Gallery/Gallery-img.webp 1x, ./images/Gallery/Gallery-img@2x.webp 2x "
-     media="(min-width: 320px)">
+      <source
+        srcset="./images/Gallery/Gallery-img.webp 1x, ./images/Gallery/Gallery-img@2x.webp 2x"
+        media="(min-width: 320px)"
+      />
 
-    <source srcset="./images/Gallery/Gallery-img.jpg 1x, ./images/Gallery/Gallery-img@2x.jpg 2x " 
-    media="(min-width: 320px)">
+      <source
+        srcset="./images/Gallery/Gallery-img.jpg 1x, ./images/Gallery/Gallery-img@2x.jpg 2x"
+        media="(min-width: 320px)"
+      />
 
-    <img class="gallery__img" src="./images/Gallery/Gallery-img.jpg" alt="Galeria zdjęć">
-
-</picture>
+      <img class="gallery__img" src="./images/Gallery/Gallery-img.jpg" alt="Galeria zdjęć" />
+    </picture>
+  </div>
 </section>
