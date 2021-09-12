@@ -123,8 +123,7 @@ p {
 }
 
 .hero-header {
-  background-color: #ffb8ca;
-  /*zmienić kolor na var */
+  background-color: var(--first-background-color);
 }
 
 .navigation {
@@ -133,9 +132,14 @@ p {
   display: flex;
 }
 
-.logo__img {
-  padding-left: 20px;
+.logo {
   padding-top: 6px;
+  padding-right: 101px;
+}
+
+.main-header {
+  height: 56px;
+  /*to będzie potem chyba żle */
 }
 
 .header-menu {
@@ -152,8 +156,7 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
-  color: #fff;
-  /*zmienic na var */
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -171,16 +174,15 @@ p {
 }
 
 .mobile-menu {
-  background-color: #e17992;
-  /* zmienic na var */
+  background-color: var(--menu-background);
   position: absolute;
   top: 0;
   right: 0;
-  padding-left: 21px;
   padding-bottom: 185px;
   margin-top: 0;
   -webkit-filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+  z-index: 4;
 }
 
 .is-hidden {
@@ -202,10 +204,15 @@ p {
 .mobile-menu__item-menu {
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.3;
-  color: #fff;
-  /*zmienic na var */
+  color: var(--white-color);
+  padding-left: 21px;
+}
+
+.mobile-menu__item-menu-contact {
+  padding-bottom: 186px;
+  /*gdzieś z przybliżeń wyszło za mało więc dodałam tu 1px */
 }
 
 .mobile-menu__link {
@@ -220,21 +227,24 @@ p {
   font-size: 16px;
   line-height: 1.302;
   color: var(--secondary-color);
-  background-color: #fff;
-  /*zmienic na var */
+  background-color: var(--white-color);
   border-radius: 22px;
   margin-top: 60px;
   margin-left: 21px;
   margin-right: 20px;
   margin-bottom: 32px;
   border: none;
-  padding: 14 69 14 49;
+  padding: 14px 69px 14px 49px;
 }
 
 .mobile-menu__item-btn:hover,
 .mobile-menu__item-btn:focus {
   background-color: #ecebeb;
   /*dodać do var */
+}
+
+.mobile-menu__item-btn {
+  display: inline;
 }
 
 .mobile-menu__close-btn {
@@ -261,30 +271,27 @@ p {
 }
 
 .hero__h1-light {
-  font-family: 'Titan One', sans-serif;
-  /*zmienic na var */
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 26px;
   letter-spacing: 0.04;
   line-height: 1.145;
-  color: #fff;
-  /* zmienic na var */
+  color: var(--white-color);
 }
 
 .hero__h1-dark {
-  font-family: 'Titan One', sans-serif;
-  /*zmienic na var */
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 48px;
   letter-spacing: 0.04;
   line-height: 0.955;
-  color: #d41443;
-  /*zmienic na var */
+  color: var(--secondary-color);
 }
 
 .hero__buttons {
-  margin-top: 223px;
-  padding-bottom: 161px;
+  margin-top: 262px;
+  padding-left: 20px;
+  padding-bottom: 185px;
   /*gdzieś z przybliżeń wyszło za mało więc dodałam tu 1px */
 }
 
@@ -310,14 +317,11 @@ p {
 }
 
 .hero__btn-hero-item {
-  background-color: #fff;
-  /*zmienic na var */
+  background-color: var(--white-color);
   border: none;
   border-radius: 20px;
-  font-family: 'DM Sans', sans-serif;
-  /*zmienic na var */
-  color: #d41443;
-  /*zmienic na var */
+  font-family: var(--main-font);
+  color: var(--secondary-color);
   font-size: 8px;
   line-height: 1.25;
   -webkit-box-align: center;
@@ -332,10 +336,8 @@ p {
 
 .hero__btn-hero-item:hover,
 .hero__btn-hero-item:focus {
-  color: #fff;
-  /*zmienic na var */
-  background-color: #d41443;
-  /*zmienic na var */
+  color: var(--white-color);
+  background-color: var(--secondary-color);
 }
 
 .bg-image {
@@ -346,7 +348,7 @@ p {
 }
 
 .bg-circle {
-  background: #ffa5ba;
+  background: var(--time-table-color);
   border: none;
   border-radius: 50%;
   position: absolute;
@@ -505,6 +507,56 @@ p {
   border-radius: 0;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products {
+    padding: 122px 34px 112px 43px;
+  }
+  .products__etiquette {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  .products__title {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  .products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .products__item {
+    width: 220px;
+    padding: 120px 11px 30px 11px;
+    position: relative;
+    margin-top: 200px;
+  }
+  .products__item:nth-child(1) {
+    margin-right: 20px;
+  }
+  .products__item:nth-child(1)::before {
+    content: url(../images/Products/tablet-products1.png);
+    top: -150px;
+    right: 0;
+  }
+  .products__item:nth-child(2) {
+    margin-right: 20px;
+  }
+  .products__item:nth-child(2)::before {
+    content: url(../images/Products/tablet-products2.png);
+    top: -150px;
+    right: 0;
+  }
+  .products__item:nth-child(3)::before {
+    content: url(../images/Products/tablet-products3.png);
+    top: -150px;
+    right: 0;
+  }
 }
 
 .advantages {
