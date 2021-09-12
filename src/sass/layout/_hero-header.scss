@@ -1,25 +1,223 @@
 .hero-header {
-  background-color: #ffb8ca;
+  background-color: var(--first-background-color);
+}
+
+.navigation {
+  display: flex;
+}
+
+.logo {
+  padding-top: 6px;
+  padding-right: 101px;
+}
+
+.main-header {
+  height: 56px; /*to będzie potem chyba żle */
+}
+
+.header-menu {
+  padding-left: 110px;
+  display: flex;
+  gap: 35px;
+  visibility: hidden;
+}
+
+.header-menu__link {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.header-menu__item--active .header-menu__link {
+  color: var(--secondary-color);
+}
+
+.main-header__mobile-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .mobile-menu {
-  background-color: #e17992;
+  background-color: var(--menu-background);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-bottom: 185px;
+  margin-top: 0;
+  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+  z-index: 4;
 }
 
-.hero-h1__light {
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1),
+    visibility 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobile-menu__item-menu:not(:last-child) {
+  padding-bottom: 23px;
+}
+
+.mobile-menu__item--active .mobile-menu__link {
+  color: var(--secondary-color);
+}
+
+.mobile-menu__item-menu {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--white-color);
+  padding-left: 21px;
+}
+
+.mobile-menu__item-menu-contact {
+  padding-bottom: 186px; /*gdzieś z przybliżeń wyszło za mało więc dodałam tu 1px */
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+}
+
+.mobile-menu__item-btn {
+  font-family: var(--main-font);
+  height: 44px;
+  width: 209px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.302;
+  color: var(--secondary-color);
+  background-color: var(--white-color);
+  border-radius: 22px;
+  margin-top: 60px;
+  margin-left: 21px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+  border: none;
+  padding: 14px 69px 14px 49px;
+}
+
+.mobile-menu__item-btn:hover,
+.mobile-menu__item-btn:focus {
+  background-color: #ecebeb; /*dodać do var */
+}
+
+.mobile-menu__item-btn {
+  display: inline;
+}
+
+.mobile-menu__close-btn {
   position: absolute;
-  width: 218px;
-  height: 106px;
+  top: 23px;
+  right: 28px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.hero {
+  margin-top: 99px;
+}
+
+.hero__h1 {
+  text-transform: uppercase;
+  position: absolute;
   left: 20px;
   top: 193px;
+  z-index: 3;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+.hero__h1-light {
+  font-family: var(--secondary-font);
+  font-weight: 400;
   font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  letter-spacing: 0.04;
+  line-height: 1.145;
+  color: var(--white-color);
+}
 
-  color: #ffffff;
+.hero__h1-dark {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 0.04;
+  line-height: 0.955;
+  color: var(--secondary-color);
+}
+
+.hero__buttons {
+  margin-top: 262px;
+  padding-left: 20px;
+  padding-bottom: 185px; /*gdzieś z przybliżeń wyszło za mało więc dodałam tu 1px */
+}
+
+.hero__btn {
+  display: flex;
+  gap: 8px;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero__btn-hero-products {
+  position: absolute;
+  z-index: 3;
+}
+
+.hero__btn-hero-made {
+  position: absolute;
+  left: 90px;
+  z-index: 3;
+}
+
+.hero__btn-hero-item {
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 20px;
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+  font-size: 8px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  padding-left: 9px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 9px;
+}
+
+.hero__btn-hero-item:hover,
+.hero__btn-hero-item:focus {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+.bg-image {
+  position: absolute;
+  right: 32px;
+  top: 92px;
+  z-index: 2;
+}
+
+.bg-circle {
+  background: var(--time-table-color);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  width: 346px;
+  height: 344px;
+  left: 36px;
+  top: 83px;
+  z-index: 1;
 }
