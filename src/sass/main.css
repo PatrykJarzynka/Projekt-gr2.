@@ -757,7 +757,7 @@ p {
 }
 
 .contact__description::after {
-  content: "";
+  content: '';
   border: 1px solid var(--gradient-bars-color);
   width: 179px;
   position: absolute;
@@ -803,7 +803,7 @@ p {
 
 .contact__bottom-list::before {
   position: absolute;
-  content: "";
+  content: '';
   border: 1px solid var(--gradient-bars-color);
   width: 179px;
   left: 20px;
@@ -843,6 +843,7 @@ p {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .contact__button-franchise {
@@ -864,6 +865,7 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .contact__button-icon {
@@ -907,6 +909,24 @@ p {
   .contact__button-franchise {
     margin-left: 15px;
     margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding: 0 115px 0 115px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+  .contact__item {
+    margin-right: 29px;
+  }
+  .time-table__hours,
+  .contact__title,
+  .contact__secondary-title,
+  .contact__description {
+    font-size: 16px;
   }
 }
 
@@ -1025,6 +1045,10 @@ p {
   height: 32px;
 }
 
+.social-list__link:hover {
+  background: #D41443;
+}
+
 @media screen and (min-width: 768px) {
   .container-footer {
     display: -webkit-box;
@@ -1064,6 +1088,17 @@ p {
   .footer__contact-title {
     font-size: 14px;
     line-height: 186%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    font-size: 34px;
+    white-space: nowrap;
+  }
+  .footer__title-second {
+    font-size: 66px;
+    white-space: nowrap;
   }
 }
 
