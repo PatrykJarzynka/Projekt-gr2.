@@ -12,71 +12,82 @@
   &-advantages {
     padding: 39px 20px 145px 20px;
   }
+
+  &-customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
-  &-customer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &-contacts {
-     background-color: var(--central-color);
-    min-width:320px;
+  &-contacts {
+    background-color: var(--central-color);
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 86px;
   }
-   &-footer {
-  
-  position: relative;
-  min-width: 320px;
-  margin: 0 auto;
-}
-
-  &-about{
-      background-color: var(--central-color);
+  &-footer {
+    position: relative;
+    min-width: 320px;
+    margin: 0 auto;
   }
 
-  &-gallery{
+  &-gallery {
     padding: 0;
   }
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1199px){
+// --------------------------- TABLET ------------------------------ //
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     min-width: 768px;
     padding: 0;
-    margin: 0 auto;
-
-    &-about {
+    
+     &-about {
       padding: 130px 36px 66px 39px;
     }
-
+    
     &-advantages {
       padding: 0px 76px 140px 36px;
     }
-
-    &-customer{
+    
+    &-customer {
       max-width: 768px;
       padding: 0 74px;
     }
-  }
-}
-   
-@media screen and (min-width: 1200px) {
-  .container {
-    min-width: 1200px;
-    padding: 0;
-    margin: 0 auto;
 
-    &-about {
-      padding: 130px 75px 39px 115px;
+    &-gallery {
+      max-width: 768px;
     }
 
+  }
+}
+
+// --------------------------- DESKTOP ------------------------------ //
+
+@media screen and (min-width: 1200px) {
+  .container {
+     min-width: 1200px;
+    
+     &-about {
+      padding: 130px 75px 39px 115px;
+    }
+    
     &-advantages {
       padding: 0px 115px 139px 115px;
+    }
+    
+    &-customer {
+      max-width: 1200px;
+      padding: 0px 176px 0px 178px;
+    }
+
+    &-gallery {
+      max-width: 1200px;
     }
   }
 }
