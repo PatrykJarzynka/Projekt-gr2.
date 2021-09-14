@@ -111,11 +111,18 @@ p {
     max-width: 768px;
     padding: 0 74px;
   }
+  .container-gallery {
+    max-width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    min-width: 1200px;
+  .container-customer {
+    max-width: 1200px;
+    padding: 0px 176px 0px 178px;
+  }
+  .container-gallery {
+    max-width: 1200px;
   }
 }
 
@@ -1385,14 +1392,15 @@ p {
   margin-top: 3px;
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width:768px) {
+
   .container {
-    max-width: 768px;
-  }
+  max-width: 768px;
+  
+}
   .contact__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+    
   }
   .contact__item {
     margin-right: 20px;
@@ -1401,20 +1409,15 @@ p {
     margin-right: 0px;
   }
   .contact__button-list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
   }
   .contact__button-franchise {
     margin-left: 15px;
     margin-top: 0px;
   }
-}
 
+}*/
 .footer {
   width: 100%;
 }

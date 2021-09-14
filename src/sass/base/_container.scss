@@ -4,43 +4,63 @@
   max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
-  
-    &-customer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &-contacts {
-     background-color: var(--central-color);
-    min-width:320px;
+
+  &-customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-contacts {
+    background-color: var(--central-color);
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 86px;
   }
-   &-footer {
+  &-footer {
     position: relative;
     min-width: 320px;
     margin: 0 auto;
   }
 
-  &-about{
-      background-color: var(--central-color);
+  &-about {
+    background-color: var(--central-color);
   }
 
-  &-gallery{
+  &-gallery {
     padding: 0;
   }
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1199px){
-    &-customer{
+// --------------------------- TABLET ------------------------------ //
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    &-customer {
       max-width: 768px;
       padding: 0 74px;
     }
-  }
-  @media screen and (min-width: 1200px) {
-    min-width: 1200px;
+
+    &-gallery {
+      max-width: 768px;
+    }
+
   }
 }
-   
+
+// --------------------------- DESKTOP ------------------------------ //
+
+@media screen and (min-width: 1200px) {
+  .container {
+    &-customer {
+      max-width: 1200px;
+      padding: 0px 176px 0px 178px;
+    }
+
+    &-gallery {
+      max-width: 1200px;
+    }
+  }
+}
