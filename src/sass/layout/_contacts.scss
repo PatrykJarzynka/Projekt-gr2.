@@ -154,9 +154,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+  
   .contact__list {
     display: flex;
   }
@@ -187,9 +185,6 @@
   
 }
   
-  .container {
-    max-width: 1200px;
-  }
   .contact__item {
     margin-right: 29px;
   }
