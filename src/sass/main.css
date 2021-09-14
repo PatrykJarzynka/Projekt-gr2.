@@ -118,11 +118,11 @@ p {
 
 @media screen and (min-width: 1200px) {
   .container-customer {
-    max-width: 1200px;
+    max-width: 1280px;
     padding: 0px 176px 0px 178px;
   }
   .container-gallery {
-    max-width: 1200px;
+    max-width: 1280px;
   }
 }
 
@@ -1210,6 +1210,19 @@ p {
   }
   .dot {
     top: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer__text {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+  .customer__gradient {
+    margin: 47px 54px 32px 59px;
+  }
+  .customer__wrapper {
+    padding: 3px 33px 0px 28px;
   }
 }
 
