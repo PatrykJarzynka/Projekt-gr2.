@@ -69,6 +69,8 @@
 
 // --------------------------- DESKTOP ------------------------------ //
 
+// zauważcie, że na figmie cały layout ma 1280px, a nie 1200px
+
 @media screen and (min-width: 1200px) {
   .container {
      min-width: 1200px;
@@ -82,12 +84,12 @@
     }
     
     &-customer {
-      max-width: 1200px;
+      max-width: 1280px;
       padding: 0px 176px 0px 178px;
     }
 
     &-gallery {
-      max-width: 1200px;
+      max-width: 1280px;
     }
   }
 }
