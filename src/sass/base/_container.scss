@@ -5,7 +5,15 @@
   padding: 0 20px;
   margin: 0 auto;
   
-    &-customer{
+  &-about {
+    padding-top: 125px;
+  }
+
+  &-advantages {
+    padding: 39px 20px 145px 20px;
+  }
+  
+  &-customer{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -33,8 +41,23 @@
   &-gallery{
     padding: 0;
   }
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1199px){
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .container {
+    min-width: 768px;
+    padding: 0;
+    margin: 0 auto;
+
+    &-about {
+      padding: 130px 36px 66px 39px;
+    }
+
+    &-advantages {
+      padding: 0px 76px 140px 36px;
+    }
+
     &-customer{
       max-width: 768px;
       padding: 0 74px;
@@ -42,3 +65,18 @@
   }
 }
    
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+
+    &-about {
+      padding: 130px 75px 39px 115px;
+    }
+
+    &-advantages {
+      padding: 0px 115px 139px 115px;
+    }
+  }
+}

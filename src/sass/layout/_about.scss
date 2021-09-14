@@ -1,35 +1,29 @@
-// tego nie mogę sprawdzić czy dobrze działa, bo nie widze zmian
-
-.about{
-    background-color: var(--central-color);
-    padding-top: 125px;
-}
-.about__title{
+.about {
+  &__title {
     font-family: var(--secondary-font);
     font-weight: 500;
     font-size: 18px;
     line-height: 1.166;
-    padding-left: 41px;
-    padding-right: 41px;
-    color: #ffa5ba;
+    letter-spacing: 0.04em;
+    color: var(--time-table-color);
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 15px;
-}
+  }
 
-.about__subtitle{
+  &__subtitle {
     font-family: var(--secondary-font);
     font-size: 34px;
     line-height: 1.147;
     padding-left: 39px;
-    padding-right: 39px;    
+    padding-right: 39px;
     color: var(--secondary-color);
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 26px;
-}
+  }
 
-.about__description{
+  &__description {
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 12px;
@@ -38,19 +32,19 @@
     padding-right: 30px;
     margin-top: 46px;
     margin-bottom: 27px;
-}
+  }
 
-.about__comment{
+  &__comment {
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 12px;
     line-height: 1.583;
-    color: #907E82;
+    color: #907e82;
     padding-left: 30px;
     padding-right: 30px;
-}
+  }
 
-.about-btn {
+  &-btn {
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
@@ -58,7 +52,7 @@
     display: flex;
     align-items: center;
     padding-left: 42px;
-    padding-right: 29px;
+    padding-right: 35px;
     padding-top: 12px;
     padding-bottom: 12px;
     color: var(--secondary-color);
@@ -68,11 +62,125 @@
     cursor: pointer;
     margin-top: 17px;
     margin-left: 30px;
-}
+  }
 
-.about-btn__icon {
+  &-btn__icon {
     width: 10px;
     height: 10px;
-    margin-left: 19px;
+    margin-left: 14px;
     margin-top: 2px;
   }
+
+  &-bg {
+    display: none;
+  }
+}
+
+// --------------------------- TABLET ------------------------------ //
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about {
+    &__title {
+      font-size: 26px;
+      font-weight: 1.153;
+      margin-bottom: 16px;
+    }
+
+    &__subtitle {
+      font-size: 48px;
+      line-height: 1.145;
+      margin-bottom: 50px;
+    }
+
+    &__article {
+      display: flex;
+    }
+
+    &__left-side {
+      padding-right: 17px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 1.785;
+      padding: 0;
+      margin-top: 50px;
+      margin-bottom: 23px;
+    }
+
+    &__comment {
+      font-size: 14px;
+      line-height: 1.76;
+      padding: 0;
+    }
+
+    &-btn {
+      font-size: 16px;
+      line-height: 1.312;
+      padding-left: 34px;
+      padding-right: 38px;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      margin-top: 62px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    position: relative;  
+    &__title {
+      font-size: 30px;
+      font-weight: 1.133;
+      margin-bottom: 15px;
+    }
+
+    &__subtitle {
+      font-size: 58px;
+      line-height: 1.137;
+      margin-bottom: 55px;
+    }
+
+    &__article {
+      display: flex;
+      position: relative;
+    }
+
+    &__left-side {
+      padding-right: 74px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 0;
+      margin-top: 51px;
+      margin-bottom: 35px;
+      max-width: 463px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__comment {
+      font-size: 14px;
+      line-height: 1.92;
+      padding: 0;
+      max-width: 420px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &-btn {
+      margin-top: 45px;
+      margin-left: 0;
+    }
+
+    &-bg {
+      display: flex;
+      position: absolute;
+      left: -112px;
+      bottom: -55px;
+      z-index: 0;
+    }
+  }
+}
