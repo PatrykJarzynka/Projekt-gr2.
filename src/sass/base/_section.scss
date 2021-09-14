@@ -1,10 +1,21 @@
 // --------------------------- MOBILE ------------------------------ //
-
 .section {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   padding: 121px 0px 98px 0px; // to do ewentualnej zmiany, bo każda sekcja ma inne paddingi :X
+
+  &-about {
+    padding: 0;
+    background-color: var(--central-color);
+    position: relative;
+  }
+
+  &-advantages {
+    padding: 0;
+    background-color: var(--central-color);
+  }
+
 
   &-customer {
     padding: 80px 0px 86px 0px;
