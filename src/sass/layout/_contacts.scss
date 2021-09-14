@@ -183,10 +183,11 @@
   background-size: contain;
   background-position: center;
   
-}
+  }
   
   .contact__item {
     margin-right: 29px;
+    max-width: 330px;
   }
 .contact__item-last {
     margin-right: 0px;
@@ -203,10 +204,7 @@
   .contact__title-bg,.contact__title-bg-foodtruck{
     margin-left: 43px;
   }
-  .contact__item {
-  max-width: 330px;
 
-}
   .contact__title {
     text-align: center;
     padding-left: 0px;
@@ -229,3 +227,4 @@
   }
   }
 }
+

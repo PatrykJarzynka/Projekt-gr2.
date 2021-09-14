@@ -1,20 +1,49 @@
 // --------------------------- MOBILE ------------------------------ //
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 121px 0px 98px 0px; // to do ewentualnej zmiany, bo każda sekcja ma inne paddingi :X
 
-.section{
-    margin-left: auto;
-    margin-right: auto;
-    width:100%;
-    padding: 121px 0px 98px 0px; // to do ewentualnej zmiany, bo każda sekcja ma inne paddingi :X
+  &-about {
+    padding: 0;
+    background-color: var(--central-color);
+    position: relative;
+  }
 
-    &-customer{
-        padding: 80px 0px 86px 0px;
+  &-advantages {
+    padding: 0;
+    background-color: var(--central-color);
+  }
+
+
+  &-customer {
+    padding: 80px 0px 86px 0px;
+  }
+  &-footer {
+    padding: 113px 0px 25px 0px;
+    background-color: var(--central-color);
+  }
+
+  &-products {
+    padding: 121px 0px 98px 0px;
+  }
+
+  &-gallery{
+    padding: 97px 0px 0px 0px;
+  }
+}
+
+// --------------------------- TABLET ------------------------------ //
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    &-customer {
+      padding: 121px 0px 166px 0px;
     }
-    &-footer{
-        padding: 113px 0px 25px 0px;
-        background-color: var(--central-color);
-    }
-   
-    &-products{
-        padding: 121px 0px 98px 0px;
-    }
+
+    &-gallery{
+    padding: 140px 0px 0px 0px;
+  }
+  }
 }

@@ -1,7 +1,4 @@
-.list {
-    list-style: none;
-    padding: 0;
-}
+
 .products .products__etiquette {
     margin: 0 0 15px 0;
     padding: 0;
@@ -14,21 +11,21 @@
     align-items: center;
 
     &__etiquette{
-        font-family: Titan One;
+        font-family: var(--secondary-font);
         font-size: 18px;
         line-height: 1.17; 
         text-align: center;
         text-transform: uppercase;
-        color: #FFA5BA;
+        color: var(--time-table-color);
     }
     &__title{
-        font-family: Titan One;
+        font-family: var(--secondary-font);
         font-size: 34px;
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #D41443;
+        color: var(--secondary-color);
         margin: 0;
     }
     &__list {
@@ -49,12 +46,12 @@
         &::after {
             content: url(../images/products/3dots.png);
             position: relative;
-            top: -240px;
+            top: -259px;
             right: 0;
           }
 
         &:nth-child(1) {
-            background: #ffb8ca;
+            background: var(--first-background-color);
             &::before {
                 content: url(../images/products/products1.png);
                 position: absolute;
@@ -63,7 +60,7 @@
               }
         }
         &:nth-child(2) {
-            background: #f0d1a5;
+            background: var(--contacts-title-bg);
             &::before {
                 content: url(../images/products/products2.png);
                 position: absolute;
@@ -72,7 +69,7 @@
               }
         }
         &:nth-child(3) {
-            background: #c2e297;
+            background: var(--contacts-title-bg-second);
             &::before {
                 content: url(../images/products/products3.png);
                 position: absolute;
@@ -82,27 +79,24 @@
         }   
     }
     &__secondary-title{
-        font-family: Titan One;
-        font-style: normal;
-        font-weight: normal;
+        font-family: var(--secondary-font);
         font-size: 20px;
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: var(--white-color);
     }  
     &__description{
-        font-family: DM Sans;
-        font-style: normal;
+        font-family: var(--main-font);
         font-weight: bold;
         font-size: 14px;
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.04em;
-        color: #FFFFFF;
-        margin-top: 40px;
-        margin-bottom: 50px;
+        color: var(--white-color);
+        margin-top: 66px;
+        margin-bottom: 30px;
     } 
     &__btn{
         width: 40px;
@@ -112,4 +106,122 @@
         border: none;
         cursor: pointer;
     } 
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .products {
+        padding: 122px 34px 112px 43px;
+        justify-content: center;
+        
+        &__etiquette{
+            font-size: 26px;
+            line-height: 1.15;
+        }
+        &__title{
+            font-size: 48px;
+            line-height: 1.15;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+        }
+        &__item {
+            width: 220px;
+            padding: 120px 11px 30px 11px;
+            position: relative;
+            margin-top: 200px;
+
+            &:nth-child(1) {
+                margin-right: 20px;
+                &::before {
+                    content: url(../images/Products/tablet-products1.png);
+                    top: -150px;
+                    right: 0;
+                }
+            }
+            &:nth-child(2) {
+                margin-right: 20px;
+                &::before {
+                    content: url(../images/Products/tablet-products2.png);
+                    top: -150px;
+                    right: 0;
+                }
+            }
+            &:nth-child(3) {
+                &::before {
+                    content: url(../images/Products/tablet-products3.png);
+                    top: -150px;
+                    right: 0;
+                }
+            }
+
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .products {
+        padding: 127px 116px 119px 127px;
+        
+        &__etiquette{
+            font-size: 30px;
+            line-height: 1.13;
+        }
+        &__title{
+            font-size: 58px;
+            line-height: 1.14;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        &__item {
+            width: 329px;
+            height: 100%;
+            padding: 163px 44px 50px 44px;
+            position: relative;
+            margin-top: 259px;
+            &::after {
+                top: -310px;
+              }
+
+            &:nth-child(1) {
+                margin-right: 29px;
+                &::before {
+                    content: url(../images/Products/desktop-products1.png);
+                    top: -220px;
+                    right: 0;
+                }
+            }
+            &:nth-child(2) {
+                margin-right: 30px;
+                &::before {
+                    content: url(../images/Products/desktop-products2.png);
+                    top: -220px;
+                    right: 0;
+                }
+            }
+            &:nth-child(3) {
+                &::before {
+                    content: url(../images/Products/desktop-products3.png);
+                    top: -220px;
+                    right: 0;
+                }
+            }
+        }
+        &__secondary-title{
+            font-size: 30px;
+            line-height: 1.13;
+        }
+        &__description{
+            margin-top: 70px;
+            margin-bottom: 60px;
+            font-size: 16px;
+            line-height: 1.75;
+            
+        }
+
+    }
+
 }
