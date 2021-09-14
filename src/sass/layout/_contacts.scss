@@ -1,8 +1,6 @@
-
 .main-title {
-    display: none;
+  display: none;
 }
-
 
 .contact__item {
   background: var(--white-color);
@@ -12,7 +10,6 @@
   padding-top: 43px;
   padding-bottom: 43px;
   max-width: 220px;
-  
 }
 .contact__title {
   font-size: 12px;
@@ -22,19 +19,18 @@
   color: var(--white-color);
 }
 .contact__secondary-title {
-    font-weight: 500;
-font-size: 12px;
-line-height: 186%;
-letter-spacing: 0.04em;
-padding-left: 20px;
-margin-top: 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  padding-left: 20px;
+  margin-top: 25px;
 }
 .contact__title-bg {
   background: var(--contacts-title-bg);
   border-radius: 4px;
   width: 80px;
   margin-left: 20px;
-  
 }
 
 .contact__title-bg-foodtruck {
@@ -52,101 +48,97 @@ margin-top: 25px;
   padding: 10px 21px 25px 20px;
   position: relative;
 
-     &::after {
-          content: "";
+  &::after {
+    content: '';
     border: 1px solid var(--gradient-bars-color);
     width: 179px;
     position: absolute;
     left: 20px;
     bottom: 0px;
-     }
+  }
 }
 
 .time-table__item {
-    margin-bottom: 10px;
-    margin-top: 25px;
+  margin-bottom: 10px;
+  margin-top: 25px;
 }
 .time-table__day {
-    
-font-weight: 500;
-font-size: 12px;
-line-height: 186%;
-color: var(--main-color);
-padding-left: 20px;
-position: relative;
-
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: var(--main-color);
+  padding-left: 20px;
+  position: relative;
 }
 
 .time-table__hours {
-    font-weight: 500;
-font-size: 12px;
-line-height: 186%;
-color: var(--time-table-color);
-padding-left: 20px;
-
-
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: var(--time-table-color);
+  padding-left: 20px;
 }
 .bottom-list__link {
-    font-weight: 500;
-font-size: 12px;
-line-height: 18px;
-color: var(--grey-color);
-text-decoration: none;
-padding-left: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--grey-color);
+  text-decoration: none;
+  padding-left: 20px;
 }
 .contact__bottom-list {
-    margin-top: 50px;
-    position: relative;
-    &::before {
+  margin-top: 50px;
+  position: relative;
+  &::before {
     position: absolute;
-    content: "";
+    content: '';
     border: 1px solid var(--gradient-bars-color);
     width: 179px;
     left: 20px;
     bottom: 65px;
-}
+  }
 }
 .contact__button-list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 54px;
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+  justify-content: center;
 }
 
 .contact__button-locations {
-    font-weight: bold;
-font-size: 16px;
-line-height: 21px;
-display: flex;
-justify-content: center;
-text-align: center;
-color: var(--white-color);
-border: none;
-background: var(--contact-button-red-bg);
-border-radius: 22px;
-padding-left: 17px;
-padding-right: 20px;
-padding-top: 10px;
-padding-bottom: 10px;
-
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--white-color);
+  border: none;
+  background: var(--contact-button-red-bg);
+  border-radius: 22px;
+  padding-left: 17px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
 }
 .contact__button-franchise {
-   font-size: 16px;
-line-height: 21px;
-display: flex;
-align-items: center;
-text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-color: var(--secondary-color);
-    border: none;
-background: var(--white-color);
-border-radius: 22px;
-padding-left: 32px;
-padding-right: 48px;
-padding-top: 10px;
-padding-bottom: 10px;
-margin-top: 10px;
+  color: var(--secondary-color);
+  border: none;
+  background: var(--white-color);
+  border-radius: 22px;
+  padding-left: 32px;
+  padding-right: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .contact__button-icon {
   width: 10px;
@@ -161,16 +153,10 @@ margin-top: 10px;
   margin-top: 3px;
 }
 
-
-/*@media screen and (min-width:768px) {
-
-  .container {
-  max-width: 768px;
+@media screen and (min-width: 768px) {
   
-}
   .contact__list {
     display: flex;
-    
   }
   .contact__item {
     margin-right: 20px;
@@ -186,5 +172,59 @@ margin-top: 10px;
     margin-left: 15px;
     margin-top: 0px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    max-width: 1200px;
+    padding-bottom: 0px;
+    
+  background-image: url(../images/contacts/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  
+  }
+  
+  .contact__item {
+    margin-right: 29px;
+    max-width: 330px;
+  }
+.contact__item-last {
+    margin-right: 0px;
+  }
+  .time-table__hours,
+  .time-table__day,
+  .contact__title,
+  .contact__secondary-title,
+  .contact__description,
+  .bottom-list__link {
+    font-size: 16px;
+    padding-left: 43px;
+  }
+  .contact__title-bg,.contact__title-bg-foodtruck{
+    margin-left: 43px;
+  }
 
-}*/
+  .contact__title {
+    text-align: center;
+    padding-left: 0px;
+  }
+  
+  .contact__description {
+   padding-right: 30px; 
+    
+    &::after {
+      width: 234px;
+      left: 43px;
+    }
+  }
+  .contact__bottom-list {
+  
+  &::before {
+    
+    width: 234px;
+    left: 43px;
+  }
+  }
+}
+
