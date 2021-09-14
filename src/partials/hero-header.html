@@ -2,49 +2,90 @@
     <header class="main-header">
         <div class="container">
             <nav class="navigation">
-                <a class="logo" href=#>
+                <a class="logo" href=#home>
                     <picture>
                         <source srcset="./images/Hero_Header/header-logo-mobile.webp 1x, ./images/Hero_Header/header-logo-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)" />
                         <source srcset="./images/Hero_Header/header-logo-mobile.png 1x, ./images/Hero_Header/header-logo-mobile@2x.png 2x" media="(min-width: 320px)" />
                         <img class="logo__img" src="./images/Hero_Header/header-logo-mobile.png" alt="logo">
                     </picture>
                 </a>
-                <ul class="header-menu list">
-                    <li class="header-menu__item">
-                        <a class="header-menu__link header-menu__item--active" href="#">
+                <a class="logo__tablet" href=#home>
+                    <picture>
+                        <source srcset="./images/Hero_Header/header-logo-tablet.webp 1x, ./images/Hero_Header/header-logo-tablet@2x.webp 2x"
+                            type="image/webp" media="(min-width: 768px)" />
+                        <source srcset="./images/Hero_Header/header-logo-tablet.png 1x, ./images/Hero_Header/header-logo-tablet@2x.png 2x"
+                            media="(min-width: 768px)" />
+                        <img class="logo__img" src="./images/Hero_Header/header-logo-tablet.png" alt="logo">
+                    </picture>
+                </a>
+                <a class="logo__desktop" href=#home>
+                    <picture>
+                        <source
+                            srcset="./images/Hero_Header/header-logo-desktop.webp 1x, ./images/Hero_Header/header-logo-desktop@2x.webp 2x"
+                            type="image/webp" media="(min-width: 1200px)" />
+                        <source
+                            srcset="./images/Hero_Header/header-logo-desktop.png 1x, ./images/Hero_Header/header-logo-desktop@2x.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img class="logo__img" src="./images/Hero_Header/header-logo-desktop.png" alt="logo">
+                    </picture>
+                </a>
+                <div class="header-menu">
+                <ul class="header-menu__list list">
+                    <li class="header-menu__list-item header-menu__list-item--active">
+                        <a class="header-menu__list-link" href="#">
                             Home
                         </a>
                     </li>
-                    <li class="header-menu__item">
-                        <a class="header-menu__link" href="#"></a>
+                    <li class="header-menu__list-item">
+                        <a class="header-menu__list-link" href="#">
                             About us
                         </a>
                     </li>
-                    <li class="header-menu__item">
-                        <a class="header-menu__link" href="#">
+                    <li class="header-menu__list-item">
+                        <a class="header-menu__list-link" href="#">
                             How it's made?
                         </a>
                     </li>
-                    <li class="header-menu__item">
-                        <a class="header-menu__link" href="#">
+                    <li class="header-menu__list-item">
+                        <a class="header-menu__list-link" href="#">
                             Our products
                         </a>
                     </li>
-                    <li class="header-menu__item">
-                        <a class="header-menu__link" href="#">
+                    <li class="header-menu__list-item">
+                        <a class="header-menu__list-link" href="#">
                             Contact
                         </a>
                     </li>
-                </ul>
+                    </ul>
+                    </div>
+                    <div class="header-menu">
+        <button type="button" class="header-menu__item-btn-desktop">
+            Buy now
+            <svg class="header-menu__item-icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        </div>
             </nav>
         </div>
-        <button class="main-header__mobile-menu" type="button" data-mobile-menu-open>
+        <!-- <button class="main-header__mobile-menu" type="button" data-mobile-menu-open>
                 <svg class="main-header__mobile-menu-icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 1H20" stroke="#D41443" />
                     <path d="M0 7H20" stroke="#D41443" />
                     <path d="M0 13H20" stroke="#D41443" />
                 </svg>
-        </button>
+        </button> -->
+            <input type="checkbox" id="burger" class="main-header__mobile-menu visually-hidden" required />
+                    <label for="burger" class="main-header__mobile-menu-icon">
+                        <svg class="main-header__mobile-menu-icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1H20" stroke="#D41443" />
+                        <path d="M0 7H20" stroke="#D41443" />
+                        <path d="M0 13H20" stroke="#D41443" />
+                    </svg>
+                    </label> 
         <button type="button" class="mobile-menu__item-btn-tablet">
         Buy now
             <svg class="mobile-menu__item-icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
@@ -53,40 +94,7 @@
             stroke-linejoin="round" />
             </svg>
         </button>
-        <div class="mobile-menu is-hidden" data-mobile-menu>
-            <button type="button" class="mobile-menu__close-btn" data-mobile-menu-close>
-<svg class="mobile-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1.25928 1L14.7408 15" stroke="white" />
-    <path d="M1 14.7407L15 1.25924" stroke="white" />
-</svg>
-            </button>
-            <ul class="mobile-menu list">
-                <li class="mobile-menu__item">
-                    <button type="button" class="mobile-menu__item-btn">
-                        Buy now
-                        <svg class="mobile-menu__item-icon" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </li>
-                <li class="mobile-menu__item-menu mobile-menu__item--active">
-                    <a class="mobile-menu__link" href="#">Home</a>
-                </li>
-                <li class="mobile-menu__item-menu mobile-menu__item--active">
-                    <a class="mobile-menu__link" href="#">About us</a>
-                </li>
-                <li class="mobile-menu__item-menu mobile-menu__item--active">
-                    <a class="mobile-menu__link" href="#">How it's made?</a>
-                </li>
-                <li class="mobile-menu__item-menu mobile-menu__item--active">
-                    <a class="mobile-menu__link" href="#">Our products</a>
-                </li>
-                <li class="mobile-menu__item-menu mobile-menu__item--active">
-                    <a class="mobile-menu__link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
+        
     </header>
         <div class="hero">
                 <h1 class="hero__h1"><span class="hero__h1-light">ice cream<br>made with</span><br><span class="hero__h1-dark">passion</span></h1>
@@ -114,6 +122,15 @@
                         <source srcset="./images/Hero_Header/milk-tablet.png 1x, ./images/Hero_Header/milk-tablet@2x.png 2x"
                         media="(min-width: 768px)" />
                         <img class="logo__img" src="./images/Hero_Header/milk-tablet.png" alt="jug with milk">
+                    </picture>
+                </li>
+                <li class="show-item__short-img-desktop">
+                    <picture>
+                        <source srcset="./images/Hero_Header/milk-desktop.webp 1x, ./images/Hero_Header/milk-desktop@2x.webp 2x"
+                            type="image/webp" media="(min-width: 1200px)" />
+                        <source srcset="./images/Hero_Header/milk-desktop.png 1x, ./images/Hero_Header/milk-desktop@2x.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img class="logo__img" src="./images/Hero_Header/milk-desktop.png" alt="jug with milk">
                     </picture>
                 </li>
                 <li class="show-item__short-description">
@@ -153,6 +170,17 @@
                 <img class="bg-image__source" src="./images/Hero_Header/hero-ice-cream-tablet.png" alt="ice-cream">
             </picture>
         </div>
+        <div class="bg-image__desktop">
+            <picture>
+                <source
+                    srcset="./images/Hero_Header/hero-ice-cream-desktop.webp 1x, ./images/Hero_Header/hero-ice-cream-desktop@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1200px)" />
+                <source
+                    srcset="./images/Hero_Header/hero-ice-cream-desktop.png 1x, ./images/Hero_Header/hero-ice-cream-desktop@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <img class="bg-image__source" src="./images/Hero_Header/hero-ice-cream-desktop.png" alt="ice-cream">
+            </picture>
+        </div>
         <div class="bg-image__tasty">
             <picture>
                 <source
@@ -162,6 +190,15 @@
                     srcset="./images/Hero_Header/tasty-tablet.png 1x, ./images/Hero_Header/tasty-tablet@2x.png 2x"
                     media="(min-width: 768px)" />
                 <img class="bg-image__source" src="./images/Hero_Header/tasty-tablet.png" alt="women with ice cream">
+            </picture>
+        </div>
+        <div class="bg-image__tasty-desktop">
+            <picture>
+                <source srcset="./images/Hero_Header/tasty-desktop.webp 1x, ./images/Hero_Header/tasty-desktop@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1200px)" />
+                <source srcset="./images/Hero_Header/tasty-desktop.png 1x, ./images/Hero_Header/tasty-desktop@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <img class="bg-image__source" src="./images/Hero_Header/tasty-desktop.png" alt="women with ice cream">
             </picture>
         </div>
         <div class="bg-circle">
@@ -179,3 +216,50 @@
         <div class="hero__count-circle"></div>
         </div>
 </section>
+<div class="mobile-menu is-hidden" data-mobile-menu>
+    <button type="button" class="mobile-menu__close-btn" data-mobile-menu-close>
+        <svg class="mobile-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.25928 1L14.7408 15" stroke="white" />
+            <path d="M1 14.7407L15 1.25924" stroke="white" />
+        </svg>
+    </button>
+    <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item">
+            <button type="button" class="mobile-menu__item-btn">
+                Buy now
+                <svg class="mobile-menu__item-icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </li>
+        <li class="mobile-menu__item-menu mobile-menu__item--active">
+            <a class="mobile-menu__link" href="#home">Home</a>
+        </li>
+        <li class="mobile-menu__item-menu">
+            <a class="mobile-menu__link" href="#about">About us</a>
+        </li>
+        <li class="mobile-menu__item-menu">
+            <a class="mobile-menu__link" href="#made">How it's made?</a>
+        </li>
+        <li class="mobile-menu__item-menu">
+            <a class="mobile-menu__link" href="#products">Our products</a>
+        </li>
+        <li class="mobile-menu__item-menu">
+            <a class="mobile-menu__link" href="#contact">Contact</a>
+        </li>
+    </ul>
+</div>
+
+    <!-- <input type="checkbox" id="checkbox" class="form__checkbox visually-hidden" required />
+        <label for="checkbox" class="form__statement">
+            <svg class="main-header__mobile-menu-icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1H20" stroke="#D41443" />
+            <path d="M0 7H20" stroke="#D41443" />
+            <path d="M0 13H20" stroke="#D41443" />
+        </svg>
+        </label> -->
+
