@@ -177,19 +177,60 @@
 }
 @media screen and (min-width: 1200px) {
   .contact {
-    padding: 0 115px 0 115px;
-  }
+    max-width: 1200px;
+    padding-bottom: 0px;
+    
+  background-image: url(../images/contacts/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  
+}
+  
   .container {
     max-width: 1200px;
   }
   .contact__item {
     margin-right: 29px;
   }
-
+.contact__item-last {
+    margin-right: 0px;
+  }
   .time-table__hours,
+  .time-table__day,
   .contact__title,
   .contact__secondary-title,
-  .contact__description {
+  .contact__description,
+  .bottom-list__link {
     font-size: 16px;
+    padding-left: 43px;
+  }
+  .contact__title-bg,.contact__title-bg-foodtruck{
+    margin-left: 43px;
+  }
+  .contact__item {
+  max-width: 330px;
+
+}
+  .contact__title {
+    text-align: center;
+    padding-left: 0px;
+  }
+  
+  .contact__description {
+   padding-right: 30px; 
+    
+    &::after {
+      width: 234px;
+      left: 43px;
+    }
+  }
+  .contact__bottom-list {
+  
+  &::before {
+    
+    width: 234px;
+    left: 43px;
+  }
   }
 }

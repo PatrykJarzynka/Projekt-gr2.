@@ -90,7 +90,8 @@
   width: 32px;
   height: 32px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: #D41443;
   }
 }
@@ -137,6 +138,10 @@ line-height: 186%;
 @media screen and (min-width:1200px) {
 
 
+.container {
+  max-width: 1200px;
+ 
+}
 .footer__title {
   font-size: 34px;
   white-space: nowrap;
@@ -144,5 +149,11 @@ line-height: 186%;
 .footer__title-second {
   font-size: 66px;
   white-space: nowrap;
+}
+.footer__left-side {
+  padding-left: 50px;
+}
+.footer__right-side {
+  padding-right: 50px;
 }
 }
