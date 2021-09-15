@@ -2248,6 +2248,11 @@ p {
   text-decoration: none;
 }
 
+.line-container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .line {
   border: 1px solid var(--gradient-bars-color);
   margin-top: 43px;
