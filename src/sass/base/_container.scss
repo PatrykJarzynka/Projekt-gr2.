@@ -93,6 +93,7 @@
   .container {
     
      min-width: 1200px;
+     max-width: 1280px;
     
      &-products{
       max-width: 1200px;
@@ -107,13 +108,9 @@
     }
     
     &-customer {
-      max-width: 1280px;
       padding: 0px 176px 0px 178px;
     }
 
-    &-gallery {
-      max-width: 1280px;
-    }
     &-contacts {
       padding-bottom: 168px;
       background-image: url(../images/contacts/contact-bg.png);
