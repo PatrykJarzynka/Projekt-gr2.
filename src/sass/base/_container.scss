@@ -7,10 +7,12 @@
   
   &-about {
     padding-top: 125px;
+    background-color: var(--central-color);
   }
 
   &-advantages {
     padding: 39px 20px 145px 20px;
+    background-color: var(--central-color);
   }
 
   &-products{
@@ -89,10 +91,10 @@
 
 // zauważcie, że na figmie cały layout ma 1280px, a nie 1200px
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    
-     min-width: 1200px;
+     min-width: 1280px;
+     max-width: 1280px;
     
      &-products{
       max-width: 1200px;
@@ -107,13 +109,9 @@
     }
     
     &-customer {
-      max-width: 1280px;
       padding: 0px 176px 0px 178px;
     }
 
-    &-gallery {
-      max-width: 1280px;
-    }
     &-contacts {
       max-width: 1280px;
       padding-bottom: 168px;
