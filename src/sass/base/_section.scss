@@ -33,6 +33,7 @@
   &-gallery{
     padding: 97px 0px 0px 0px;
   }
+  
 }
 
 // --------------------------- TABLET ------------------------------ //
@@ -46,10 +47,17 @@
     &-gallery{
     padding: 140px 0px 0px 0px;
   }
+  
   &-footer {
-    padding-bottom: 0;
+    padding-bottom: 0;   
   }
-  
-  
 }
+}
+
+// --------------------------- DESKTOP ------------------------------ //
+@media screen and (min-width: 1200px) {
+  
+  .contact {
+    padding-bottom: 0px;
+  }
 }

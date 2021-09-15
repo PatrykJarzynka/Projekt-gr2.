@@ -69,10 +69,7 @@
       margin-bottom: -100px;
       padding-bottom: 165px;
     }
-    &-footer {
-      margin-bottom: -50px;
-      padding-bottom: 164px;
-    }
+    
   }
 }
 
@@ -100,6 +97,10 @@
     }
     &-contacts {
       padding-bottom: 168px;
+      background-image: url(../images/contacts/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 33%
     }
   }
 }
