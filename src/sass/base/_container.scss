@@ -7,10 +7,12 @@
   
   &-about {
     padding-top: 125px;
+    background-color: var(--central-color);
   }
 
   &-advantages {
     padding: 39px 20px 145px 20px;
+    background-color: var(--central-color);
   }
 
   &-customer {
@@ -71,9 +73,9 @@
 
 // zauważcie, że na figmie cały layout ma 1280px, a nie 1200px
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-     min-width: 1200px;
+     min-width: 1280px;
     
      &-about {
       padding: 130px 75px 39px 115px;
