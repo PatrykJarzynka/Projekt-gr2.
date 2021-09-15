@@ -4,6 +4,14 @@
             <nav class="navigation">
                 <a class="logo" href=#home>
                     <picture>
+                        <!-- <source srcset="./images/Hero_Header/header-logo-desktop.webp 1x, ./images/Hero_Header/header-logo-desktop@2x.webp 2x"
+                            type="image/webp" media="(min-width: 1200px)" />
+                        <source srcset="./images/Hero_Header/header-logo-desktop.png 1x, ./images/Hero_Header/header-logo-desktop@2x.png 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/Hero_Header/header-logo-tablet.webp 1x, ./images/Hero_Header/header-logo-tablet@2x.webp 2x"
+                            type="image/webp" media="(min-width: 768px)" />
+                        <source srcset="./images/Hero_Header/header-logo-tablet.png 1x, ./images/Hero_Header/header-logo-tablet@2x.png 2x"
+                            media="(min-width: 768px)" /> -->
                         <source srcset="./images/Hero_Header/header-logo-mobile.webp 1x, ./images/Hero_Header/header-logo-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)" />
                         <source srcset="./images/Hero_Header/header-logo-mobile.png 1x, ./images/Hero_Header/header-logo-mobile@2x.png 2x" media="(min-width: 320px)" />
                         <img class="logo__img" src="./images/Hero_Header/header-logo-mobile.png" alt="logo">
@@ -16,7 +24,7 @@
                         <source srcset="./images/Hero_Header/header-logo-tablet.png 1x, ./images/Hero_Header/header-logo-tablet@2x.png 2x"
                             media="(min-width: 768px)" />
                         <img class="logo__img" src="./images/Hero_Header/header-logo-tablet.png" alt="logo">
-                    </picture>
+                    </picture> 
                 </a>
                 <a class="logo__desktop" href=#home>
                     <picture>
@@ -27,8 +35,8 @@
                             srcset="./images/Hero_Header/header-logo-desktop.png 1x, ./images/Hero_Header/header-logo-desktop@2x.png 2x"
                             media="(min-width: 1200px)" />
                         <img class="logo__img" src="./images/Hero_Header/header-logo-desktop.png" alt="logo">
-                    </picture>
-                </a>
+                    </picture> 
+                </a> 
                 <div class="header-menu">
                 <ul class="header-menu__list list">
                     <li class="header-menu__list-item header-menu__list-item--active">
@@ -78,7 +86,7 @@
                 </svg>
         </button> -->
             <input type="checkbox" id="burger" class="main-header__mobile-menu visually-hidden" required />
-                    <label for="burger" class="main-header__mobile-menu-icon">
+                    <label for="burger" class="main-header__mobile-menu-icon" data-mobile-menu-open>
                         <svg class="main-header__mobile-menu-icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 1H20" stroke="#D41443" />
