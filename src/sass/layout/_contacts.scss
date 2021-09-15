@@ -172,18 +172,11 @@
     margin-left: 15px;
     margin-top: 0px;
   }
+  .footer__left-side {
+    padding-left: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .contact {
-    max-width: 1200px;
-    padding-bottom: 0px;
-    
-  background-image: url(../images/contacts/contact-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  
-  }
   
   .contact__item {
     margin-right: 29px;

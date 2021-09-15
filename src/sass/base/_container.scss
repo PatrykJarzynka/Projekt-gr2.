@@ -34,11 +34,13 @@
     justify-content: center;
     align-items: center;
     padding-top: 86px;
+    
   }
   &-footer {
     position: relative;
     min-width: 320px;
     margin: 0 auto;
+    background-color: var(--central-color);
   }
 
   &-gallery {
@@ -74,6 +76,12 @@
     &-gallery {
       max-width: 768px;
     }
+
+    &-contacts {
+      margin-bottom: -100px;
+      padding-bottom: 165px;
+    }   
+
   }
 }
 
@@ -105,6 +113,13 @@
 
     &-gallery {
       max-width: 1280px;
+    }
+    &-contacts {
+      padding-bottom: 168px;
+      background-image: url(../images/contacts/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 33%
     }
   }
 }
