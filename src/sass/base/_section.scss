@@ -19,9 +19,11 @@
   }
   &-footer {
     padding: 0px 0px 0px 0px;
-    
+    background-color: var(--central-color);
   }
- 
+ &-contact {
+   background-color: var(--central-color);
+ }
   
   &-products {
     padding: 121px 0px 98px 0px;
