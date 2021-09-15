@@ -52,6 +52,7 @@
   color: var(--secondary-color);
   text-decoration: none;
   padding-right: 20px;
+  
 }
 .copyright {
   inline-size: 150px;
@@ -63,6 +64,8 @@
 .container-copyright {
   display: flex;
   justify-content: center;
+  background-color: var(--central-color);
+ 
 }
 .copyright__link {
   font-style: normal;
@@ -76,6 +79,10 @@
 .line {
   border: 1px solid var(--gradient-bars-color);
   margin-top: 43px;
+  background-color: var(--central-color);
+  margin-top: 0px;
+  min-width: 320px;
+  
 }
 .social-list__icon {
   width: 20px;
