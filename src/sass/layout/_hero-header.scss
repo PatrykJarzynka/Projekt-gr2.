@@ -136,6 +136,30 @@
 }
 
 .is-hidden {
+  transform: translateX(100%);
+}
+
+.menu-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+}
+
+.mobile-menu {
+  transition: 0.3s linear;
+}
+
+#burger:checked ~ .menu-wrapper {
+  mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
