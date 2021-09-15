@@ -13,6 +13,13 @@
     padding: 39px 20px 145px 20px;
   }
 
+  &-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &-customer {
     display: flex;
     flex-direction: column;
@@ -49,6 +56,10 @@
     min-width: 768px;
     padding: 0;
     
+    &-products{
+      max-width: 768px;
+    }
+    
      &-about {
       padding: 130px 36px 66px 39px;
     }
@@ -65,19 +76,27 @@
     &-gallery {
       max-width: 768px;
     }
+
     &-contacts {
       margin-bottom: -100px;
       padding-bottom: 165px;
-    }
-    
+    }   
+
   }
 }
 
 // --------------------------- DESKTOP ------------------------------ //
 
+// zauważcie, że na figmie cały layout ma 1280px, a nie 1200px
+
 @media screen and (min-width: 1200px) {
   .container {
+    
      min-width: 1200px;
+    
+     &-products{
+      max-width: 1200px;
+    }
     
      &-about {
       padding: 130px 75px 39px 115px;
@@ -88,12 +107,12 @@
     }
     
     &-customer {
-      max-width: 1200px;
+      max-width: 1280px;
       padding: 0px 176px 0px 178px;
     }
 
     &-gallery {
-      max-width: 1200px;
+      max-width: 1280px;
     }
     &-contacts {
       padding-bottom: 168px;
