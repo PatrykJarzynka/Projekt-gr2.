@@ -115,11 +115,20 @@
       max-width: 1280px;
     }
     &-contacts {
+      max-width: 1280px;
       padding-bottom: 168px;
       background-image: url(../images/contacts/contact-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 33%
     }
+    &-footer, &-copyright{
+      max-width: 1280px;
+    } 
+  }
+    .line-container {
+      padding-left: 0px;
+      padding-right: 0px;
+      max-width: 1280px;
   }
 }
