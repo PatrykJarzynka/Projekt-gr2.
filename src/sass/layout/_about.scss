@@ -1,5 +1,5 @@
 .about {
-  &__title {
+  &__label {
     font-family: var(--secondary-font);
     font-weight: 500;
     font-size: 18px;
@@ -11,7 +11,7 @@
     margin-bottom: 15px;
   }
 
-  &__subtitle {
+  &__title {
     font-family: var(--secondary-font);
     font-size: 34px;
     line-height: 1.147;
@@ -39,7 +39,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.583;
-    color: #907e82;
+    color: var(--grey-color);
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -62,8 +62,14 @@
     cursor: pointer;
     margin-top: 17px;
     margin-left: 30px;
+    position: relative;
+    z-index: 1;
+    &:hover{
+      background-color: var(--btn-color);
+      border: 1px solid var(--btn-color);
+    }
   }
-
+  
   &-btn__icon {
     width: 10px;
     height: 10px;
@@ -79,13 +85,13 @@
 // --------------------------- TABLET ------------------------------ //
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .about {
-    &__title {
+    &__label {
       font-size: 26px;
       font-weight: 1.153;
       margin-bottom: 16px;
     }
 
-    &__subtitle {
+    &__title {
       font-size: 48px;
       line-height: 1.145;
       margin-bottom: 50px;
@@ -129,13 +135,13 @@
 @media screen and (min-width: 1200px) {
   .about {
     position: relative;  
-    &__title {
+    &__label {
       font-size: 30px;
       font-weight: 1.133;
       margin-bottom: 15px;
     }
 
-    &__subtitle {
+    &__title {
       font-size: 58px;
       line-height: 1.137;
       margin-bottom: 55px;
@@ -148,6 +154,8 @@
 
     &__left-side {
       padding-right: 74px;
+      position: relative;
+      z-index: 1;
     }
 
     &__description {

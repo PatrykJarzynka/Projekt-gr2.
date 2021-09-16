@@ -4,6 +4,7 @@
   &__picture {
     position: relative;
     top: 7px;
+    display: inline-block;
   }
 
   &__picture::before {
@@ -146,5 +147,23 @@
     padding: 3px 33px 0px 28px;
   }
 
+  &__details {
+      font-size: 20px;
+      margin-top: 34px;
+    }
+
+    &__picture {
+      top: 21px;
+
+      &::before {
+      top: 138px;
+      right: 372px;
+    }
+    }
+
 }
+
+.dot {
+    top: 15px;
+  }
 }

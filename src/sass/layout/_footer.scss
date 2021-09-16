@@ -1,6 +1,4 @@
-.footer {
-  width: 100%;
-}
+
 
 .footer__title {
   font-family: var(--secondary-font);
@@ -12,6 +10,7 @@
   color: var(--time-table-color);
   max-width: 232px;
   margin-bottom: 17px;
+  padding-top: 113px;
 }
 .footer__title-second {
   font-family: var(--secondary-font);
@@ -42,6 +41,7 @@
   font-size: 12px;
   line-height: 186%;
   text-align: right;
+  padding-bottom: 43px;
 }
 .footer__contact-link {
   font-style: normal;
@@ -52,17 +52,20 @@
   color: var(--secondary-color);
   text-decoration: none;
   padding-right: 20px;
+  
 }
 .copyright {
   inline-size: 150px;
   word-break: break-word;
   text-align: center;
   margin-top: 22px;
-  
+  padding-bottom: 25px;
 }
 .container-copyright {
   display: flex;
   justify-content: center;
+  background-color: var(--central-color);
+ 
 }
 .copyright__link {
   font-style: normal;
@@ -73,10 +76,20 @@
   color: var(--grey-color);
   text-decoration: none;
 }
+.line-container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 .line {
+  
   border: 1px solid var(--gradient-bars-color);
   margin-top: 43px;
+  background-color: var(--central-color);
+  margin-top: 0px;
+  max-width: 320px;
+  
 }
+
 .social-list__icon {
   width: 20px;
   height: 20px;
@@ -108,11 +121,18 @@
 margin-top: -50px;
   
 }
+.line {
+  max-width: 768px;
+  border-right: none;
+  border-left:none;
+    border-top: var(--central-color);
+    padding-top: 91px;
+}
 .copyright{
   inline-size: initial;
   word-break: unset;
   align-items: center;
-  padding-bottom: 0px;
+  padding-bottom: 18px;
 }
 .social-list__link {
   width: 34px;
@@ -124,6 +144,7 @@ margin-top: -50px;
   letter-spacing: 0.04em;
   max-width: 340px;
   margin-bottom: 16px;
+  padding-top: 0;
 }
 .footer__title-second {
   font-size: 48px;
@@ -138,13 +159,12 @@ line-height: 186%;
 @media screen and (min-width:1200px) {
 
 
-.container {
-  max-width: 1200px;
- 
-}
+
 .footer__title {
   font-size: 34px;
   white-space: nowrap;
+   
+  
 }
 .footer__title-second {
   font-size: 66px;
@@ -155,5 +175,21 @@ line-height: 186%;
 }
 .footer__right-side {
   padding-right: 50px;
+}
+.line {
+  
+  border-right: none;
+  border-left:none;
+  max-width: 1280px;
+  
+  padding-top: 97px;
+}
+
+.container-copyright {
+  padding-bottom: 10px;
+  
+}
+.footer__contact-title {
+  margin-bottom: 0;
 }
 }

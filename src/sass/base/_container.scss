@@ -7,10 +7,19 @@
   
   &-about {
     padding-top: 125px;
+    background-color: var(--central-color);
   }
 
   &-advantages {
     padding: 39px 20px 145px 20px;
+    background-color: var(--central-color);
+  }
+
+  &-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &-customer {
@@ -27,11 +36,13 @@
     justify-content: center;
     align-items: center;
     padding-top: 86px;
+    
   }
   &-footer {
     position: relative;
     min-width: 320px;
     margin: 0 auto;
+    background-color: var(--central-color);
   }
 
   &-gallery {
@@ -46,6 +57,10 @@
   .container {
     min-width: 768px;
     padding: 0;
+    
+    &-products{
+      max-width: 768px;
+    }
     
      &-about {
       padding: 130px 36px 66px 39px;
@@ -64,6 +79,11 @@
       max-width: 768px;
     }
 
+    &-contacts {
+      margin-bottom: -100px;
+      padding-bottom: 165px;
+    }   
+
   }
 }
 
@@ -71,9 +91,14 @@
 
 // zauważcie, że na figmie cały layout ma 1280px, a nie 1200px
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-     min-width: 1200px;
+     min-width: 1280px;
+     max-width: 1280px;
+    
+     &-products{
+      max-width: 1200px;
+    }
     
      &-about {
       padding: 130px 75px 39px 115px;
@@ -84,12 +109,24 @@
     }
     
     &-customer {
-      max-width: 1280px;
       padding: 0px 176px 0px 178px;
     }
 
-    &-gallery {
+    &-contacts {
       max-width: 1280px;
+      padding-bottom: 168px;
+      background-image: url(../images/contacts/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 33%
     }
+    &-footer, &-copyright{
+      max-width: 1280px;
+    } 
+  }
+    .line-container {
+      padding-left: 0px;
+      padding-right: 0px;
+      max-width: 1280px;
   }
 }

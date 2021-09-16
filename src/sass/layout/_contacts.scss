@@ -134,7 +134,7 @@
   background: var(--white-color);
   border-radius: 22px;
   padding-left: 32px;
-  padding-right: 48px;
+  padding-right: 38px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
@@ -144,13 +144,13 @@
   width: 10px;
   height: 10px;
   margin-left: 10px;
-  margin-top: 7px;
+  margin-top: 6px;
 }
 .contact__button-icon-red {
   width: 10px;
   height: 10px;
-  margin-left: 10px;
-  margin-top: 3px;
+  margin-left: 15px;
+  margin-top: 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -172,18 +172,11 @@
     margin-left: 15px;
     margin-top: 0px;
   }
+  .footer__left-side {
+    padding-left: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .contact {
-    max-width: 1200px;
-    padding-bottom: 0px;
-    
-  background-image: url(../images/contacts/contact-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  
-  }
   
   .contact__item {
     margin-right: 29px;
