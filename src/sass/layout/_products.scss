@@ -108,6 +108,25 @@
         overflow: visible;
     } 
 }
+@media screen and (min-width: 480px){
+    .products{
+        &__item {
+            width: 280px;
+            height: 515px;
+            &::after {
+                top: -266px;
+              }
+        }
+        &__secondary-title{
+            font-size: 22px;
+        }  
+        &__description{
+            font-size: 15px;
+        } 
+        
+    }
+
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .products {
         justify-content: center;
