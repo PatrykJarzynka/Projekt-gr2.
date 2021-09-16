@@ -102,8 +102,8 @@ p {
 }
 
 .container-contacts {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(88%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
-  background-image: linear-gradient(to top, var(--central-color) 88%, var(--bg-gradient) 80%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(88%, var(--central-color)), color-stop(80%, var(--white-color)));
+  background-image: linear-gradient(to top, var(--central-color) 88%, var(--white-color) 80%);
   min-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,8 +156,8 @@ p {
   .container-contacts {
     margin-bottom: -100px;
     padding-bottom: 165px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
-    background-image: linear-gradient(to top, var(--central-color) 90%, var(--bg-gradient) 80%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, var(--central-color)), color-stop(80%, var(--white-color)));
+    background-image: linear-gradient(to top, var(--central-color) 90%, var(--white-color) 80%);
   }
 }
 
@@ -185,8 +185,8 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 33%;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
-    background-image: linear-gradient(to top, var(--central-color) 80%, var(--bg-gradient) 80%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--white-color)));
+    background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
   }
   .container-footer, .container-copyright {
     max-width: 1280px;
@@ -223,8 +223,8 @@ p {
 }
 
 .section-contact {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(88%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
-  background-image: linear-gradient(to top, var(--central-color) 88%, var(--bg-gradient) 80%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(88%, var(--central-color)), color-stop(80%, var(--white-color)));
+  background-image: linear-gradient(to top, var(--central-color) 88%, var(--white-color) 80%);
 }
 
 .section-products {
@@ -247,16 +247,16 @@ p {
     padding-bottom: 0;
   }
   .section-contact {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
-    background-image: linear-gradient(to top, var(--central-color) 90%, var(--bg-gradient) 80%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, var(--central-color)), color-stop(80%, var(--white-color)));
+    background-image: linear-gradient(to top, var(--central-color) 90%, var(--white-color) 80%);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
     padding-bottom: 0px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
-    background-image: linear-gradient(to top, var(--central-color) 80%, var(--bg-gradient) 80%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--white-color)));
+    background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
   }
 }
 
@@ -2102,6 +2102,10 @@ p {
   cursor: pointer;
 }
 
+.contact__button-franchise:hover, .contact__button-franchise:focus {
+  background-color: #ECEBEB;
+}
+
 .contact__button-icon {
   width: 10px;
   height: 10px;
@@ -2114,6 +2118,33 @@ p {
   height: 10px;
   margin-left: 15px;
   margin-top: 1px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .contact__title {
+    font-size: 13px;
+  }
+  .contact__secondary-title {
+    font-size: 13px;
+  }
+  .contact__description {
+    font-size: 13px;
+  }
+  .contact__button-franchise {
+    font-size: 17px;
+  }
+  .contact__button-locations {
+    font-size: 17px;
+  }
+  .time-table__day {
+    font-size: 13px;
+  }
+  .time-table__hours {
+    font-size: 13px;
+  }
+  .bottom-list__link {
+    font-size: 13px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2308,6 +2339,27 @@ p {
 
 .social-list__link:hover, .social-list__link:focus {
   background: #D41443;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer__title {
+    font-size: 19px;
+  }
+  .footer__title-second {
+    font-size: 36px;
+  }
+  .footer__contact-title {
+    font-size: 13px;
+  }
+  .footer__contact-link {
+    font-size: 14px;
+  }
+  .copyright__link {
+    font-size: 15px;
+  }
+  .line {
+    max-width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {

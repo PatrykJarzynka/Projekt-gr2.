@@ -108,7 +108,28 @@
     background: #D41443;
   }
 }
-
+@media screen and (min-width: 480px) and (max-width: 767px){
+.footer {
+  &__title {
+    font-size: 19px;
+  }
+  &__title-second {
+    font-size: 36px;
+  }
+  &__contact-title {
+    font-size: 13px;
+  }
+  &__contact-link {
+    font-size: 14px;
+  }
+}
+.copyright__link {
+  font-size: 15px;
+}
+  .line {
+    max-width: 480px;
+  }
+}
 
 @media screen and (min-width:768px) {
 
