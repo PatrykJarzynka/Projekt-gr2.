@@ -141,7 +141,7 @@
   cursor: pointer;
   &:hover,
   &:focus {
-    background-color: #ECEBEB;
+    background-color: var(--btn-color);
   }
 }
 .contact__button-icon {
