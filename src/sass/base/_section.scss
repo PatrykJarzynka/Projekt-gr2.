@@ -40,7 +40,7 @@
 
 // --------------------------- TABLET ------------------------------ //
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .section {
     &-products{
       padding: 122px 0px 112px 0px;
@@ -63,7 +63,7 @@
 }
 
 // --------------------------- DESKTOP ------------------------------ //
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 
   .section-products{
     padding: 127px 0px 119px 0px;
