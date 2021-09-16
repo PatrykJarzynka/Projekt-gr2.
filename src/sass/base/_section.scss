@@ -21,8 +21,13 @@
   }
   &-footer {
     padding: 0px 0px 0px 0px;
-    
+    background-color: var(--central-color);
   }
+
+  &-contact {
+   background-image: linear-gradient(to top, var(--central-color) 88%, var(--white-color) 80%);
+ }
+
   &-products {
     background-color: var(--products-background);
   }
@@ -51,6 +56,9 @@
   &-footer {
     padding-bottom: 0;   
   }
+  &-contact {
+    background-image: linear-gradient(to top, var(--central-color) 90%, var(--white-color) 80%);
+  }
 }
 }
 
@@ -63,5 +71,6 @@
   
   .contact {
     padding-bottom: 0px;
+    background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
   }
 }
