@@ -102,7 +102,8 @@ p {
 }
 
 .container-contacts {
-  background-color: var(--central-color);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(88%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
+  background-image: linear-gradient(to top, var(--central-color) 88%, var(--bg-gradient) 80%);
   min-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +156,8 @@ p {
   .container-contacts {
     margin-bottom: -100px;
     padding-bottom: 165px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
+    background-image: linear-gradient(to top, var(--central-color) 90%, var(--bg-gradient) 80%);
   }
 }
 
@@ -182,6 +185,8 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 33%;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
+    background-image: linear-gradient(to top, var(--central-color) 80%, var(--bg-gradient) 80%);
   }
   .container-footer, .container-copyright {
     max-width: 1280px;
@@ -218,7 +223,8 @@ p {
 }
 
 .section-contact {
-  background-color: var(--central-color);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(88%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
+  background-image: linear-gradient(to top, var(--central-color) 88%, var(--bg-gradient) 80%);
 }
 
 .section-products {
@@ -240,11 +246,17 @@ p {
   .section-footer {
     padding-bottom: 0;
   }
+  .section-contact {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
+    background-image: linear-gradient(to top, var(--central-color) 90%, var(--bg-gradient) 80%);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
     padding-bottom: 0px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--bg-gradient)));
+    background-image: linear-gradient(to top, var(--central-color) 80%, var(--bg-gradient) 80%);
   }
 }
 

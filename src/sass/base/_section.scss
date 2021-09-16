@@ -22,7 +22,7 @@
     background-color: var(--central-color);
   }
  &-contact {
-   background-color: var(--central-color);
+   background-image: linear-gradient(to top, var(--central-color) 88%, var(--bg-gradient) 80%);
  }
   
   &-products {
@@ -51,6 +51,9 @@
   &-footer {
     padding-bottom: 0;   
   }
+  &-contact {
+    background-image: linear-gradient(to top, var(--central-color) 90%, var(--bg-gradient) 80%);
+  }
 }
 }
 
@@ -59,5 +62,6 @@
   
   .contact {
     padding-bottom: 0px;
+    background-image: linear-gradient(to top, var(--central-color) 80%, var(--bg-gradient) 80%);
   }
 }

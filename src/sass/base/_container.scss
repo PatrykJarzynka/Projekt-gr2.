@@ -29,7 +29,7 @@
   }
   
   &-contacts {
-    background-color: var(--central-color);
+      background-image: linear-gradient(to top, var(--central-color) 88%, var(--bg-gradient) 80%);
     min-width: 320px;
     display: flex;
     flex-direction: column;
@@ -82,6 +82,8 @@
     &-contacts {
       margin-bottom: -100px;
       padding-bottom: 165px;
+      
+    background-image: linear-gradient(to top, var(--central-color) 90%, var(--bg-gradient) 80%);
     }   
 
   }
@@ -118,7 +120,9 @@
       background-image: url(../images/contacts/contact-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: 33%
+  background-position-y: 33%;
+  background-image: linear-gradient(to top, var(--central-color) 80%, var(--bg-gradient) 80%);
+  
     }
     &-footer, &-copyright{
       max-width: 1280px;
