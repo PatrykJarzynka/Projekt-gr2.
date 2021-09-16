@@ -2103,7 +2103,7 @@ p {
 }
 
 .contact__button-franchise:hover, .contact__button-franchise:focus {
-  background-color: #ECEBEB;
+  background-color: var(--btn-color);
 }
 
 .contact__button-icon {
@@ -2338,7 +2338,7 @@ p {
 }
 
 .social-list__link:hover, .social-list__link:focus {
-  background: #D41443;
+  background: var(--secondary-color);
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
