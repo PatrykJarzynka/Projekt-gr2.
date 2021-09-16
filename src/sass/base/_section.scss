@@ -7,10 +7,12 @@
 
   &-about {
     padding: 0;
+    background-color: var(--central-color);
   }
 
   &-advantages {
     padding: 0;
+    background-color: var(--central-color);
   }
 
 
@@ -21,12 +23,12 @@
     padding: 0px 0px 0px 0px;
     background-color: var(--central-color);
   }
- &-contact {
+
+  &-contact {
    background-image: linear-gradient(to top, var(--central-color) 88%, var(--white-color) 80%);
  }
-  
+
   &-products {
-    padding: 121px 0px 98px 0px;
     background-color: var(--products-background);
   }
 
@@ -40,12 +42,15 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section {
+    &-products{
+      padding: 122px 0px 112px 0px;
+    }
     &-customer {
       padding: 121px 0px 166px 0px;
     }
 
     &-gallery{
-    padding: 140px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
   
   &-footer {
@@ -59,6 +64,10 @@
 
 // --------------------------- DESKTOP ------------------------------ //
 @media screen and (min-width: 1200px) {
+
+  .section-products{
+    padding: 127px 0px 119px 0px;
+  }
   
   .contact {
     padding-bottom: 0px;
