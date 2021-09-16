@@ -278,6 +278,70 @@ p {
   }
 }
 
+.hamburger-menu {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 9999;
+}
+
+.line {
+  width: 100%;
+  height: 2.67px;
+  background-color: black;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.hamburger-menu--opened .line-1 {
+  -webkit-transform: rotateZ(-405deg) translate(-5px, 6px);
+          transform: rotateZ(-405deg) translate(-5px, 6px);
+}
+
+.hamburger-menu--opened .line-2 {
+  opacity: 0;
+}
+
+.hamburger-menu--opened .line-3 {
+  -webkit-transform: rotateZ(405deg) translate(-6px, -6px);
+          transform: rotateZ(405deg) translate(-6px, -6px);
+}
+
+.navbar {
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+  z-index: 100;
+}
+
+.change {
+  right: 0;
+}
+
 .hero-header {
   background-color: var(--first-background-color);
   position: relative;
@@ -1467,7 +1531,23 @@ p {
   overflow: visible;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .products__item {
+    width: 280px;
+    height: 515px;
+  }
+  .products__item::after {
+    top: -266px;
+  }
+  .products__secondary-title {
+    font-size: 22px;
+  }
+  .products__description {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .products {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1529,7 +1609,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .products__etiquette {
     font-size: 30px;
     line-height: 1.13;
