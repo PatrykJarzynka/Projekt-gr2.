@@ -139,6 +139,10 @@
   padding-bottom: 10px;
   margin-top: 10px;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--btn-color);
+  }
 }
 .contact__button-icon {
   width: 10px;
@@ -152,7 +156,37 @@
   margin-left: 15px;
   margin-top: 1px;
 }
-
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .contact {
+    &__title { 
+      font-size: 13px ;
+    }
+    &__secondary-title {
+      font-size: 13px;
+    }
+    &__description {
+      font-size: 13px;
+    }
+    &__button-franchise {
+      font-size: 17px;
+    }
+    &__button-locations {
+      font-size: 17px;
+    }
+  }
+    .time-table {
+      &__day {
+      font-size: 13px;
+      }
+      &__hours {
+      font-size: 13px;
+    }
+    }
+    .bottom-list__link {
+      font-size: 13px;
+    }
+    
+}
 @media screen and (min-width: 768px) {
   
   .contact__list {

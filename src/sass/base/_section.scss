@@ -21,8 +21,13 @@
   }
   &-footer {
     padding: 0px 0px 0px 0px;
-    
+    background-color: var(--central-color);
   }
+
+  &-contact {
+   background-image: linear-gradient(to top, var(--central-color) 88%, var(--white-color) 80%);
+ }
+
   &-products {
     background-color: var(--products-background);
   }
@@ -35,7 +40,7 @@
 
 // --------------------------- TABLET ------------------------------ //
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .section {
     &-products{
       padding: 122px 0px 112px 0px;
@@ -51,11 +56,14 @@
   &-footer {
     padding-bottom: 0;   
   }
+  &-contact {
+    background-image: linear-gradient(to top, var(--central-color) 90%, var(--white-color) 80%);
+  }
 }
 }
 
 // --------------------------- DESKTOP ------------------------------ //
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 
   .section-products{
     padding: 127px 0px 119px 0px;
@@ -63,5 +71,6 @@
   
   .contact {
     padding-bottom: 0px;
+    background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
   }
 }
