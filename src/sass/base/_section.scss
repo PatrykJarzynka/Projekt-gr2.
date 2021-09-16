@@ -7,10 +7,12 @@
 
   &-about {
     padding: 0;
+    background-color: var(--central-color);
   }
 
   &-advantages {
     padding: 0;
+    background-color: var(--central-color);
   }
 
 
@@ -43,7 +45,7 @@
     }
 
     &-gallery{
-    padding: 140px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
   
   &-footer {
