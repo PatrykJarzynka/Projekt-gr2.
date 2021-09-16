@@ -108,7 +108,26 @@
         overflow: visible;
     } 
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .products{
+        &__item {
+            width: 280px;
+            height: 515px;
+            &::after {
+                top: -266px;
+              }
+        }
+        &__secondary-title{
+            font-size: 22px;
+        }  
+        &__description{
+            font-size: 15px;
+        } 
+        
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     .products {
         justify-content: center;
         
@@ -168,7 +187,7 @@
         }
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .products {
         
         &__etiquette{
