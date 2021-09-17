@@ -146,7 +146,7 @@
 
   &__btn{
     margin-top: 19px;
-    margin-bottom: 160px;
+    margin-bottom: 154px;
     padding: 8px 14px;
     border-radius: 20px;
     font-size: 8px;
@@ -180,6 +180,17 @@
     top: 36px;
     right: 12px;
     z-index: -1;
+  }
+
+  &__circle{
+    position: absolute;
+    top: 27px;
+    left:16px;
+    width:346px;
+    height: 346px;
+    border-radius: 50%;
+    background-color: var(--time-table-color);
+    z-index: -2;
   }
 
 }
