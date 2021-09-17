@@ -153,12 +153,18 @@
     background-color: var(--white-color);
     border: none;
 
+    &:hover{
+      background-color: var(--btn-color);
+    }
+
     &--dark{
       margin-right: 8px;
       background-color: var(--secondary-color);
-      color: var(--white-color
-      
-      );
+      color: var(--white-color);
+
+      &:hover{
+        background-color: var(--dots-color);
+      }
     }
   }
 
