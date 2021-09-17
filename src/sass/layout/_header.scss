@@ -56,6 +56,7 @@
   margin-top: 6px;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .navigation {
   &__button-hidden {
@@ -64,6 +65,7 @@
   &__item {
     margin-bottom: 23px;
     margin-left: 21px;
+    font-weight: 700;
   }
   &__button-div {
     padding-right: 20px;
@@ -146,6 +148,10 @@
     }
   }
 
+  &__picture{
+    cursor: pointer;
+  }
+
   &__btn {
     margin-top: 19px;
     margin-bottom: 154px;
@@ -156,6 +162,7 @@
     color: var(--secondary-color);
     background-color: var(--white-color);
     border: none;
+    cursor: pointer;
 
     &:hover {
       background-color: var(--btn-color);
@@ -415,6 +422,7 @@
 
       &-div{
         padding-top: 38px;
+        left:600px;
       }
     }
 
@@ -423,6 +431,7 @@
       // padding-left: 110px;
       min-width: 541px;
       padding-left: 0;
+      position:absolute;
     }
     &__item {
       white-space: nowrap;

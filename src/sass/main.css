@@ -363,6 +363,7 @@ p {
   margin-top: 6px;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 
 .navigation__button-hidden {
@@ -372,6 +373,7 @@ p {
 .navigation__item {
   margin-bottom: 23px;
   margin-left: 21px;
+  font-weight: 700;
 }
 
 .navigation__button-div {
@@ -458,6 +460,10 @@ p {
   font-size: 48px;
 }
 
+.hero__picture {
+  cursor: pointer;
+}
+
 .hero__btn {
   margin-top: 19px;
   margin-bottom: 154px;
@@ -468,6 +474,7 @@ p {
   color: var(--secondary-color);
   background-color: var(--white-color);
   border: none;
+  cursor: pointer;
 }
 
 .hero__btn:hover {
@@ -711,6 +718,7 @@ p {
   }
   .navigation__button-div {
     padding-top: 38px;
+    left: 600px;
   }
   .navigation__list {
     display: -webkit-box;
@@ -718,6 +726,7 @@ p {
     display: flex;
     min-width: 541px;
     padding-left: 0;
+    position: absolute;
   }
   .navigation__item {
     white-space: nowrap;
