@@ -696,12 +696,24 @@ p {
   .navbar {
     position: initial;
     background-color: var(--first-background-color);
+    width: 0px;
   }
   .header__logo {
     margin: 37px 110px 84px 46px;
   }
   .navigation .navigation__link::after {
     content: none;
+  }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation__button::after {
+    display: none;
+  }
+  .navigation__button-div {
+    padding-top: 38px;
   }
   .navigation__list {
     display: -webkit-box;
@@ -718,9 +730,6 @@ p {
   }
   .navigation__item:not(:first-child) {
     margin-left: 35px;
-  }
-  .navigation__button-div {
-    display: none;
   }
   .hero {
     position: relative;
