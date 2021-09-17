@@ -176,8 +176,8 @@ p {
   .container-contacts {
     margin-bottom: -100px;
     padding-bottom: 165px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, var(--central-color)), color-stop(80%, var(--white-color)));
-    background-image: linear-gradient(to top, var(--central-color) 90%, var(--white-color) 80%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--white-color)));
+    background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
   }
 }
 
@@ -281,8 +281,8 @@ p {
     padding-bottom: 0;
   }
   .section-contact {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, var(--central-color)), color-stop(80%, var(--white-color)));
-    background-image: linear-gradient(to top, var(--central-color) 90%, var(--white-color) 80%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--white-color)));
+    background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
   }
 }
 
