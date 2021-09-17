@@ -63,10 +63,6 @@ p {
   margin: 0 auto;
 }
 
-.container-header {
-  overflow: hidden;
-}
-
 .container-about {
   padding-top: 125px;
 }
@@ -234,6 +230,7 @@ p {
 
 .section-header {
   background-color: var(--first-background-color);
+  overflow: hidden;
 }
 
 .section-about {
