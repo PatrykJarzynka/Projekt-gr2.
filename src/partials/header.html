@@ -57,6 +57,28 @@
     </div>
     <div class="hero">
       <h1 class="hero__header">ice cream made with <span class="hero__header--dark">passion</span></h1>
+      <button type="button" class="hero__btn hero__btn--dark"><a class="hero__link" href="#">Procucts</a></button>
+      <button type="button" class="hero__btn"><a class="hero__link" href="#">How it's made?</a></button>
+      <picture>
+        <source srcset="./images/Hero_Header/hero-ice-cream-mobile.webp 1x,
+            ./images/Hero_Header/hero-ice-cream-mobile@2x.webp 2x" media="(min-width: 320px)"
+            type=images/webp>
+
+            <source
+              srcset="
+                ./images/Hero_Header/hero-ice-cream-mobile.png    1x,
+                ./images/Hero_Header/hero-ice-cream-mobile@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+
+            <img
+              class="hero__img"
+              src="./images/Hero_Header/hero-ice-cream-mobile.png"
+              alt="Lody w rożku"
+            />
+      </picture>
+      <div class=hero__circle></div>
     </div>
   </div>
 </header>

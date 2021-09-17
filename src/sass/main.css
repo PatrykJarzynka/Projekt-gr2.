@@ -425,6 +425,11 @@ p {
 
 /* ===========  HEADER END ========= */
 /* ===========  HERO ========= */
+.hero {
+  position: relative;
+  z-index: 0;
+}
+
 .hero__header {
   font-family: var(--secondary-font);
   font-size: 26px;
@@ -432,12 +437,63 @@ p {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--white-color);
+  padding-top: 137px;
+  padding-right: 62px;
 }
 
 .hero__header--dark {
   color: var(--secondary-color);
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  line-height: 50px;
+  font-size: 48px;
+}
+
+.hero__btn {
+  margin-top: 19px;
+  margin-bottom: 154px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 8px;
+  line-height: 10px;
+  color: var(--secondary-color);
+  background-color: var(--white-color);
+  border: none;
+}
+
+.hero__btn:hover {
+  background-color: var(--btn-color);
+}
+
+.hero__btn--dark {
+  margin-right: 8px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.hero__btn--dark:hover {
+  background-color: var(--dots-color);
+}
+
+.hero__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero__img {
+  position: absolute;
+  top: 36px;
+  right: 12px;
+  z-index: -1;
+}
+
+.hero__circle {
+  position: absolute;
+  top: 27px;
+  left: 16px;
+  width: 346px;
+  height: 346px;
+  border-radius: 50%;
+  background-color: var(--time-table-color);
+  z-index: -2;
 }
 
 @media screen and (min-width: 768px) {
