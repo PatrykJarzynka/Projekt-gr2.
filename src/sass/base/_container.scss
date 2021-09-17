@@ -99,7 +99,6 @@
     }
 
     &-contacts {
-      margin-bottom: -100px;
       padding-bottom: 165px;
 
       background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
@@ -123,6 +122,7 @@
 
     &-products {
       max-width: 1200px;
+      padding-bottom: 119px;
     }
 
     &-about {

@@ -67,12 +67,19 @@
 
 // --------------------------- DESKTOP ------------------------------ //
 @media screen and (min-width: 1280px) {
-  .section-products {
-    padding: 127px 0px 119px 0px;
-  }
+  .section {
+    &-products {
+      padding: 127px 0px 119px 0px;
+    }
 
-  .contact {
-    padding-bottom: 0px;
-    background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
+    &-customer{
+      padding-top: 123px;
+      padding-bottom: 179px;
+    }
+
+    .contact {
+      padding-bottom: 0px;
+      background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
+    }
   }
 }
