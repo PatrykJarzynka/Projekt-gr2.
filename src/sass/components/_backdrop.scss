@@ -1,5 +1,5 @@
 .backdrop {
-  position: fixed;
+  position: absolute;
   z-index: 2;
   left: 0;
   top: 0;
@@ -18,7 +18,7 @@
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 300px;
@@ -30,6 +30,7 @@
   transform-origin: center center;
   transform: translate(-50%, -50%);
   transition: transform 2s ease-out;
+  
   &__close-btn-svg {
     display: flex;
     position: absolute;
@@ -37,12 +38,16 @@
     right: 10px;
     width: 30px;
     height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--btn-color);
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+      background-color: var(--btn-color);
+    }
   }
 
   &__title {
@@ -65,7 +70,7 @@
     margin-top: 20px;
   }
 
-  &__description {
+  &__list {
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 13px;
@@ -75,29 +80,9 @@
     margin-top: 20px;
     margin-bottom: 40px;
   }
-
-  &-btn {
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.285;
-    display: flex;
-    align-items: center;
-    padding: 12px 42px 12px 42px;
-    color: var(--secondary-color);
-    background-color: var(--white-color);
-    border: 1px solid var(--white-color);
-    border-radius: 22px;
-    cursor: pointer;
-    margin-right: 50px;
-    margin-left: auto;
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 1;
-    &:hover {
-      background-color: var(--btn-color);
-      border: 1px solid var(--btn-color);
-    }
+  
+  &__description {
+    padding-left: 3px;
   }
 }
 
@@ -117,17 +102,14 @@
       padding: 0px 40px 0px 40px;
     }
 
-    &__description {
+    &__list {
       font-size: 14px;
       line-height: 1.785;
       padding: 0px 40px 0px 60px;
     }
 
-    &-btn {
-      font-size: 15px;
-      line-height: 1.312;
-      margin-right: 60px;
-      margin-left: auto;
+    &__description {
+      padding-left: 5px;
     }
   }
 }
@@ -148,17 +130,14 @@
       padding: 0px 50px 0px 50px;
     }
 
-    &__description {
+    &__list {
       font-size: 14px;
       line-height: 1.785;
       padding: 0px 50px 0px 70px;
     }
 
-    &-btn {
-      font-size: 15px;
-      line-height: 1.312;
-      margin-right: 70px;
-      margin-left: auto;
+    &__description {
+      padding-left: 7px;
     }
   }
 }
@@ -178,17 +157,14 @@
       padding: 0px 60px 0px 60px;
     }
 
-    &__description {
+    &__list {
       font-size: 14px;
       line-height: 1.785;
       padding: 0px 60px 0px 80px;
     }
 
-    &-btn {
-      font-size: 15px;
-      line-height: 1.312;
-      margin-right: 80px;
-      margin-left: auto;
-    }
+    &__description {
+      padding-left: 9px;
+    }    
   }
 }
