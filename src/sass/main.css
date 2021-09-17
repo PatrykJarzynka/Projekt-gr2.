@@ -173,7 +173,6 @@ p {
     max-width: 768px;
   }
   .container-contacts {
-    margin-bottom: -100px;
     padding-bottom: 165px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--white-color)));
     background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
@@ -191,6 +190,7 @@ p {
   }
   .container-products {
     max-width: 1200px;
+    padding-bottom: 119px;
   }
   .container-about {
     padding: 125px 117px 39px 112px;
@@ -289,7 +289,11 @@ p {
   .section-products {
     padding: 127px 0px 119px 0px;
   }
-  .contact {
+  .section-customer {
+    padding-top: 123px;
+    padding-bottom: 179px;
+  }
+  .section .contact {
     padding-bottom: 0px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--central-color)), color-stop(80%, var(--white-color)));
     background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
@@ -1019,9 +1023,8 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .products {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding-top: 122px;
+    padding-bottom: 112px;
   }
   .products__etiquette {
     font-size: 26px;
