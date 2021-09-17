@@ -2,7 +2,7 @@
   max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
-  
+
   &-about {
     padding-top: 125px;
     // background-color: var(--central-color);
@@ -13,7 +13,7 @@
     // background-color: var(--central-color);
   }
 
-  &-products{
+  &-products {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,16 +25,15 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   &-contacts {
-      background-image: linear-gradient(to top, var(--central-color) 88%, var(--white-color) 80%);
+    background-image: linear-gradient(to top, var(--central-color) 88%, var(--white-color) 80%);
     min-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 86px;
-    
   }
   &-footer {
     position: relative;
@@ -46,7 +45,6 @@
   &-gallery {
     padding: 0;
   }
-  
 }
 
 // --------------------------- MOBILE ------------------------------ //
@@ -54,38 +52,39 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     min-width: 480px;
-    
+
     &-about {
       padding: 130px 36px 0px 39px;
     }
-    
+
     &-advantages {
       padding: 1px 70px 140px 70px;
     }
   }
 }
 
-
-
 // --------------------------- TABLET ------------------------------ //
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .container {
     min-width: 768px;
-    padding: 0;
-    
-    &-products{
+
+    &-header {
+      display: flex;
+    }
+
+    &-products {
       max-width: 768px;
     }
-    
-     &-about {
+
+    &-about {
       padding: 130px 36px 0px 39px;
     }
-    
+
     &-advantages {
       padding: 0px 76px 140px 36px;
     }
-    
+
     &-customer {
       max-width: 768px;
       padding: 0 74px;
@@ -98,10 +97,9 @@
     &-contacts {
       margin-bottom: -100px;
       padding-bottom: 165px;
-      
-    background-image: linear-gradient(to top, var(--central-color) 90%, var(--white-color) 80%);
-    }   
 
+      background-image: linear-gradient(to top, var(--central-color) 90%, var(--white-color) 80%);
+    }
   }
 }
 
@@ -111,21 +109,25 @@
 
 @media screen and (min-width: 1280px) {
   .container {
-     min-width: 1280px;
-     max-width: 1280px;
-    
-     &-products{
+    min-width: 1280px;
+    max-width: 1280px;
+
+    &-header {
+      position: relative;
+    }
+
+    &-products {
       max-width: 1200px;
     }
-    
-     &-about {
+
+    &-about {
       padding: 125px 117px 39px 112px;
     }
-    
+
     &-advantages {
       padding: 0px 115px 139px 115px;
     }
-    
+
     &-customer {
       padding: 0px 176px 0px 178px;
     }
@@ -134,19 +136,19 @@
       max-width: 1280px;
       padding-bottom: 168px;
       background-image: url(../images/contacts/contact-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: 33%;
-  background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
-  
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-y: 33%;
+      background-image: linear-gradient(to top, var(--central-color) 80%, var(--white-color) 80%);
     }
-    &-footer, &-copyright{
+    &-footer,
+    &-copyright {
       max-width: 1280px;
-    } 
+    }
   }
-    .line-container {
-      padding-left: 0px;
-      padding-right: 0px;
-      max-width: 1280px;
+  .line-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 1280px;
   }
 }
