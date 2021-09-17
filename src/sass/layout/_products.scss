@@ -9,6 +9,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 121px;
+    padding-bottom: 98px;
 
     &__etiquette{
         font-family: var(--secondary-font);
@@ -189,7 +191,8 @@
 }
 @media screen and (min-width: 1280px) {
     .products {
-        
+        padding-top: 127px;
+ 
         &__etiquette{
             font-size: 30px;
             line-height: 1.13;
@@ -249,9 +252,6 @@
             font-size: 16px;
             line-height: 1.75;
             overflow: hidden;
-            
         }
-
     }
-
 }
