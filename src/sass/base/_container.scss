@@ -76,7 +76,10 @@
     min-width: 768px;
 
     &-header {
-      display: flex;
+      padding: 37px 34px 0px 34px;
+      // czasowo zabrany background-color z section
+      background-color: var(--first-background-color);
+
     }
 
     &-products {
@@ -120,6 +123,7 @@
 
     &-header {
       position: relative;
+      padding: 0px;
     }
 
     &-products {
