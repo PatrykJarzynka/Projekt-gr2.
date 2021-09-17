@@ -95,11 +95,15 @@
       left: 0px;
       bottom: 10px;
     }
-    .navigation__button-icon-red {
+    &-icon-red {
       width: 10px;
       height: 10px;
       fill: red;
       margin-left: 15px;
+    }
+
+    &:hover{
+      background-color: var(--btn-color);
     }
   }
 

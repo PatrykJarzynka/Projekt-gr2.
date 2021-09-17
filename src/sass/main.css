@@ -411,11 +411,15 @@ p {
   bottom: 10px;
 }
 
-.navigation__button .navigation__button-icon-red {
+.navigation__button-icon-red {
   width: 10px;
   height: 10px;
   fill: red;
   margin-left: 15px;
+}
+
+.navigation__button:hover {
+  background-color: var(--btn-color);
 }
 
 .navigation .navigation__link {
