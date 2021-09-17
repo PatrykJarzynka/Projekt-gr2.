@@ -134,14 +134,32 @@
   color: var(--white-color);
   padding-top: 137px;
   padding-right: 62px;
-  padding-bottom: 203px;
 
     &--dark{
       color: var(--secondary-color);
       line-height: 50px;
       font-size: 48px;
     }
+  }
 
+  &__btn{
+    margin-top: 19px;
+    margin-bottom: 160px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 8px;
+    line-height: 10px;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+    border: none;
+
+    &--dark{
+      margin-right: 8px;
+      background-color: var(--secondary-color);
+      color: var(--white-color
+      
+      );
+    }
   }
 
 }
