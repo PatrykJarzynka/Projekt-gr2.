@@ -168,6 +168,11 @@
     }
   }
 
+  &__link{
+    text-decoration: none;
+    color:inherit;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
