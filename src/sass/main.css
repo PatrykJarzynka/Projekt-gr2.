@@ -63,6 +63,10 @@ p {
   margin: 0 auto;
 }
 
+.container-header {
+  overflow: hidden;
+}
+
 .container-about {
   padding-top: 125px;
 }
@@ -129,6 +133,12 @@ p {
 
 .container-gallery {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -256,6 +266,8 @@ p {
 
 .section-gallery {
   padding: 0px 0px 0px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(39.5%, var(--central-color)), color-stop(39.5%, var(--white-color)));
+  background: linear-gradient(to bottom, var(--central-color) 39.5%, var(--white-color) 39.5%);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
