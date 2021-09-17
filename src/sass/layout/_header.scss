@@ -393,9 +393,11 @@
   .header{ 
     display: flex;
   }
+
   .hamburger-menu {
     display: none;
   }
+
   .navbar {
     position: initial;
     background-color: var(--first-background-color);
@@ -405,12 +407,10 @@
     margin: 37px 110px 84px 46px;
   }
 
-
-
-
   .navigation .navigation__link::after {
     content: none;
   }
+
   .navigation {
     &__list {
       display: flex;
@@ -475,7 +475,7 @@
   
     &__circle{
       position: absolute;
-      top: -120px;
+      top: -115px;
       left: 475px;
       width: 538px;
       height: 538px;
@@ -527,7 +527,7 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
       position: relative;
-      z-index:0;
+      z-index: 0;
       &::before {
         position: absolute;
         content: '';
