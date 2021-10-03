@@ -6,7 +6,7 @@
   "homepage": "https://PatrykJarzynka.io/Projekt-grupowy",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Projekt-grupowy/"
+    "build": "parcel build src/*.html --public-url /Projekt-gr2./"
   },
   "repository": {
     "type": "git",
